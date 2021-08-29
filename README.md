@@ -311,3 +311,204 @@ Notação: `cy.get(“elemento”).should(“comparação”, resultadoEsperado)
 	Exemplo:
 	
 	`cy.get(‘#name’).clear().type(“novo nome”);`
+
+- **select** – Seleciona uma ou mais opções de um elemento do tipo “Select”. Recebe uma string ou um array de strings com o value ou o texto do element.
+
+	Exemplos:
+
+	`cy.get(‘#comboCidades’).select(“Campinas”);`
+
+	`cy.get(‘#animais’).select([“gato”, “cachorro”, “peixe”]);`
+
+- **find** – Busca por um elemento “dentro” de outro elemento.
+
+	Exemplos:
+
+	`cy.get(‘#listaCidades’).find(“span”);`
+
+	`cy.get(‘#animais’).find(“[value=gato]”);`
+
+- **wait** – Pode ser passado um número para ser usado como tempo de espera em milissegundos, ou um “alias” de alguma requisição, para esperar a sua conclusão.
+
+	Exemplos:
+
+	`cy.wait(5000);`
+
+	`cy.wait(‘@requestBuscaCidades’);`
+
+- **then** – Trabalha com ações assíncronas, utilizado para realizar determinada ação após a conclusão de uma chamada assíncrona. Recebe uma função de callback
+
+	Exemplos:
+
+	`cy.title().then(title => console.log(title));`
+
+	`cy.get(“.success-alert”).invoke(“text”).then(msg => {
+		expect(msg).to.have.text(“Cadastro realizado!”)
+	});`
+
+	**Observação:** o comando should também pode ser utilizado em chamadas assíncronas, porém possui algumas diferenças, enquanto o then aguarda a conclusão da chamada, o should fica tentando realizar a ação mesmo sem a conclusão da chamada. Além disso, o should não permite realizar novas buscas dentro dele, já o then permite.
+
+- **wrap** – Trasforma o item passado por parâmetro em um elemento manipulável pelo Cypress, possibilitando realizar validações com o should, trabalhar com promises e realizar outras manipulações do elemento.
+
+	Exemplos:
+
+	`const obj = { nome: “Tiago”, sobrenome: “Lopes” };`
+
+	`cy.wrap(obj).should(“have.property”, “nome”, “Tiago”);`
+
+	`cy.get(“#login”).then($elemento => {
+		cy.wrap($elemento).type(“tiagolopes”);
+	})`
+
+	`cy.wrap(10).should(“be.eql”, 10);`
+
+- **its** – Consegue navegar pelas propriedades de um objeto, capturando os valores de cada propriedade.
+
+	Exemplos:
+
+	`const obj = { nome: “Tiago”, membros: { pai: “Marcos” } };`
+
+	`cy.wrap(obj).its(“nome”).should(“be.equal”, “Tiago”);`
+
+	`cy.wrap(obj).its(“membros”).its(“pai”).should(“contain”, Marcos);`
+
+	`cy.wrap(obj).its(“membros.pai”).should(“contain”, “Marcos”);`
+
+- **invoke** – Consegue invocar métodos de objetos, passando parâmetros e manipulando o valor retornado.
+
+	Exemplos:
+	
+	`cy.get(“.success-alert”).invoke(“text”).then(text => {
+		expect(text).to.be.equal(“Cadastro finalizado!”);
+	})`
+
+	`cy.get(“#inputName”).invoke(“val”, “Tiago Lopes”);`
+
+	`cy.get(“#resultado”).invoke(“html”, “<div>Teste!</div>”);`
+
+- **on** – Consegue manipular eventos do navegador.
+
+	Exemplos:
+
+	`cy.on(“window:alert”, mensagem => {
+		expect(“mensagem”).contain(“Erro ao tentar salvar”);
+	})`
+
+	`cy.on(“window:confirm”, mensagem => {
+		console.log(mensagem);
+	})`
+
+- **stub** – Funciona como mock para simular serviços externos e elementos que o Cypress não consegue manipular. É possível criar um stub passando ou não parâmetros.
+
+	Exemplos:
+
+	`const stub = cy.stub();`
+
+	`cy.on(“window:alert”, stub);`
+
+	`cy.window().then(window => {
+		cy.stub(window, “prompt”).returns(“Valor qualquer”);
+	})`
+
+- **window** – Captura o objeto window da página, tendo acesso aos seus métodos e atributos.
+
+	Exemplos:
+	
+	`cy.window().then(window => {
+		cy.stub(window, “open”);
+	});`
+
+	`cy.window().invoke(‘alert’, “Exibindo alerta”);`
+
+- **as** – Possibilita dar um “alias” (apelido) a elementos para encurtar a chamada deles, por exemplo: rotas da API, elementos HTML com um Seletor muito grande e mocks.
+
+	Exemplos:
+
+	`cy.get(“#form input[type=name]”).as(“name”);`
+
+	`cy.get(“@name”).type(“Tiago Lopes”);`
+
+	`cy.window().then(window => {
+		cy.stub(window, “open”).as(“winOpen”);
+	});`
+
+	`cy.get(“@winOpen”).should(“be.called”);`
+
+	`cy.intercept(“GET”, “/users*”).as(“rotaUsuarios”);`
+
+	`cy.wait(“@rotaUsuarios”);`
+	
+## Debug
+- **debug** – Pausa a execução de teste naquele ponto que o debug foi adicionado e abre o navegador no modo de debug, exibindo informações no console do navegador.
+
+	Exemplo:
+	
+	`cy.title().should(“contain”, “Início”).debug();`
+
+- **pause** – Simplesmente pausa a execução dos testes no ponto em que o pause foi adicionado, no painel do Cypress irá aparecer dois botões, um para continuar a execução dos testes até a próxima pausa e outro para executar o próximo comando.
+
+## Hooks
+Os hooks são utilizados para se executar determinados blocos de código antes ou depois de cada teste, um exemplo mais comum de utilização é para efetuar o login do usuário, se o login for um pré-requisito para o teste, então antes de cada teste deve ser feito o login, portanto esse comando pode ser colocado dentro de um bloco “beforeEach”.
+
+### Tipos de hooks
+
+- **before** – Executa uma vez antes de todos os testes.
+
+- **after** – Executa uma vez após todos os testes.
+
+- **beforeEach** – Executa antes de cada teste, ou seja, se houver 8 testes, ele executará o bloco beforeEach 8 vezes, uma vez antes de cada teste.
+
+- **afterEach** – Executa depois de cada teste, ou seja, se houver 8 testes, ele executará o bloco afterEach 8 vezes, uma após cada teste.
+
+- **describe** – O bloco “describe” representa a suíte de testes, recebe uma string como parâmetro com a mensagem do que está sendo testado.
+
+- **it** – O bloco “it” representa um teste, recebe uma string como parâmetro com a mensagem do que está sendo testado.
+
+## Configurações do Cypress
+As configurações do Cypress podem ser feitas via linha de comando ou no arquivo cypress.json
+
+- **SelectorPlayground** – Essa configuração em específica, pode ser feita no arquivo index.js dentro da pasta support e serve para fazer alterações no funcionamento do SelectorPlayground (Ferramenta que consegue gerar um seletor do elemento HTML selecionado). Uma das alterações que podem ser feita, é alterar a ordem de prioridade dos seletores que ele busca, conforme o exemplo abaixo:
+
+	Exemplo:
+	
+		Cypress.SelectorPlayground.defaults({
+			selectorPriority: [
+				‘id’,
+				‘data-testid’,
+				‘data-cy’
+				‘class’,
+				‘attributes’,
+				‘tag’,
+				‘nth-child’
+			];
+		});
+
+- **defaultCommandTimeout** – Recebe um número. Valor em milissegundos da espera do Cypress pra encontrar algum elemento ou fazer uma asserção. O valor padrão é de 4000 milissegundos (4 segundos).
+
+	Exemplo:
+	
+		{
+			“defaultCommandTimeout” : 6000
+		}
+
+## Plugins
+O Cypress possui muitas opções de plugins para aumentar as suas funcionalidades.
+- **Cypress Xpath** – Por padrão, o Cypress não aceita xpath nos seus comandos de busca, esse plugin traz o comando “xpath”, que possibilita que o Cypress localize elementos utilizando essa forma de busca.
+
+	Documentação oficial do plugin [cypress-xpath](https://www.npmjs.com/package/cypress-xpath).
+
+	Exemplos:
+	
+	`cy.xpath(“/html/body/div/h1”);`
+	
+	`cy.xpath(“//h1”);`
+	
+	`cy.xpath(“//input[contains(@onclick, ’Francisco’)]”);`
+	
+	`cy.xpath(“//input[@id=’name’]”).type(“Tiago Lopes”);`
+	
+	`cy.xpath(“//table//td[contains(., ‘Valor’)]”);`
+	
+	`cy.xpath(“//[contains(., “Tiago”)]/following-sibling::td”);`
+	
+	[Site](https://www.red-gate.com/simple-talk/development/dotnet-development/xpath-css-dom-and-selenium-the-rosetta-stone/) com exemplos de xpath.
