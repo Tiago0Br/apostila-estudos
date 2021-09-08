@@ -438,6 +438,40 @@ Notação: `cy.get(“elemento”).should(“comparação”, resultadoEsperado)
 
 	`cy.wait(“@rotaUsuarios”);`
 	
+- **fixture** - Carrega um arquivo de Fixtures para usar como massa de teste ou mock de retorno de chamadas de APIs, por padrão, o Cypress irá buscar o arquivo dentro da pasta fixtures.
+
+	Exemplo:
+	
+		cy.fixture('users').then(user => {
+			cy.get('#name').type(user.name);
+			cy.get('#age').type(user.age);
+		})
+		
+- **each** - Quando o Cypress encontra vários elementos com o mesmo seletor, é possível iterá-los utilizando o método **each**.
+	
+	Exemplo:
+	
+		cy.get('#checkboxFood').each($el => {
+			if ($el.val() !== 'pizza') {
+				cy.wrap($el).check();
+			}
+		})
+		
+- **clock** - Consegue alterar a data e hora do sistema, é possível passar uma data como parâmetro e o cypress irá alterar a data e hora do sistema para o valor passado por parêmetro.
+
+	Exemplos:
+	
+	`cy.clock();`
+	
+		dt = new Date(2021, 09, 07, 15, 23, 10);
+		cy.clock(dt);
+		
+- **tick** - Consegue avançar o tempo do sistema, recebe como parâmetro um número em milissegundos.
+
+	Exemplo:
+	
+	`cy.tick(1500); // Avança um segundo e meio no tempo`
+
 ## Debug
 - **debug** – Pausa a execução de teste naquele ponto que o debug foi adicionado e abre o navegador no modo de debug, exibindo informações no console do navegador.
 
@@ -463,6 +497,25 @@ Os hooks são utilizados para se executar determinados blocos de código antes o
 - **describe** – O bloco “describe” representa a suíte de testes, recebe uma string como parâmetro com a mensagem do que está sendo testado.
 
 - **it** – O bloco “it” representa um teste, recebe uma string como parâmetro com a mensagem do que está sendo testado.
+
+## Comandos Customizáveis
+É possível adicionar comandos customizáveis no Cypress, ao adicionar o comando no arquivo Commands.js, ele se torna visível em todo o projeto de teste, é bem útil para evitar repetições de código.
+	Sintaxe:
+	
+		Cypress.Commands.add('nomeDoComando', (parametros) => {
+		    // implementação do comando
+		})
+
+	Exemplo:
+	
+		Cypress.Commands.add('clickAlert', (locator, message) => {
+		    cy.get(locator).click()
+		    cy.on('window:alert', msg => {
+			expect(msg).to.be.equal(message)
+		    })
+		})
+		
+	Para invocar esse comando, basta chamar por `cy.clickAlert()` em qualquer arquivo de teste.
 
 ## Configurações do Cypress
 As configurações do Cypress podem ser feitas via linha de comando ou no arquivo cypress.json
@@ -512,3 +565,5 @@ O Cypress possui muitas opções de plugins para aumentar as suas funcionalidade
 	`cy.xpath(“//[contains(., “Tiago”)]/following-sibling::td”);`
 	
 	[Site](https://www.red-gate.com/simple-talk/development/dotnet-development/xpath-css-dom-and-selenium-the-rosetta-stone/) com exemplos de xpath.
+	
+
