@@ -342,9 +342,9 @@ Notação: `cy.get(“elemento”).should(“comparação”, resultadoEsperado)
 
 	`cy.title().then(title => console.log(title));`
 
-	`cy.get(“.success-alert”).invoke(“text”).then(msg => {
-		expect(msg).to.have.text(“Cadastro realizado!”)
-	});`
+		cy.get(“.success-alert”).invoke(“text”).then(msg => {
+			expect(msg).to.have.text(“Cadastro realizado!”)
+		});
 
 	**Observação:** o comando should também pode ser utilizado em chamadas assíncronas, porém possui algumas diferenças, enquanto o then aguarda a conclusão da chamada, o should fica tentando realizar a ação mesmo sem a conclusão da chamada. Além disso, o should não permite realizar novas buscas dentro dele, já o then permite.
 
@@ -356,9 +356,9 @@ Notação: `cy.get(“elemento”).should(“comparação”, resultadoEsperado)
 
 	`cy.wrap(obj).should(“have.property”, “nome”, “Tiago”);`
 
-	`cy.get(“#login”).then($elemento => {
-		cy.wrap($elemento).type(“tiagolopes”);
-	})`
+		cy.get(“#login”).then($elemento => {
+			cy.wrap($elemento).type(“tiagolopes”);
+		})
 
 	`cy.wrap(10).should(“be.eql”, 10);`
 
@@ -378,9 +378,9 @@ Notação: `cy.get(“elemento”).should(“comparação”, resultadoEsperado)
 
 	Exemplos:
 	
-	`cy.get(“.success-alert”).invoke(“text”).then(text => {
-		expect(text).to.be.equal(“Cadastro finalizado!”);
-	})`
+		cy.get(“.success-alert”).invoke(“text”).then(text => {
+			expect(text).to.be.equal(“Cadastro finalizado!”);
+		})
 
 	`cy.get(“#inputName”).invoke(“val”, “Tiago Lopes”);`
 
@@ -406,9 +406,9 @@ Notação: `cy.get(“elemento”).should(“comparação”, resultadoEsperado)
 
 	`cy.on(“window:alert”, stub);`
 
-	`cy.window().then(window => {
-		cy.stub(window, “prompt”).returns(“Valor qualquer”);
-	})`
+		cy.window().then(window => {
+			cy.stub(window, “prompt”).returns(“Valor qualquer”);
+		})
 
 - **window** – Captura o objeto window da página, tendo acesso aos seus métodos e atributos.
 
@@ -428,9 +428,9 @@ Notação: `cy.get(“elemento”).should(“comparação”, resultadoEsperado)
 
 	`cy.get(“@name”).type(“Tiago Lopes”);`
 
-	`cy.window().then(window => {
-		cy.stub(window, “open”).as(“winOpen”);
-	});`
+		cy.window().then(window => {
+			cy.stub(window, “open”).as(“winOpen”);
+		});
 
 	`cy.get(“@winOpen”).should(“be.called”);`
 
@@ -500,13 +500,15 @@ Os hooks são utilizados para se executar determinados blocos de código antes o
 
 ## Comandos Customizáveis
 É possível adicionar comandos customizáveis no Cypress, ao adicionar o comando no arquivo Commands.js, ele se torna visível em todo o projeto de teste, é bem útil para evitar repetições de código.
-	Sintaxe:
+	
+Sintaxe:
 	
 		Cypress.Commands.add('nomeDoComando', (parametros) => {
 		    // implementação do comando
 		})
 
-	Exemplo:
+	
+Exemplo:
 	
 		Cypress.Commands.add('clickAlert', (locator, message) => {
 		    cy.get(locator).click()
@@ -515,7 +517,7 @@ Os hooks são utilizados para se executar determinados blocos de código antes o
 		    })
 		})
 		
-	Para invocar esse comando, basta chamar por `cy.clickAlert()` em qualquer arquivo de teste.
+Para invocar esse comando, basta chamar por `cy.clickAlert()` em qualquer arquivo de teste.
 
 ## Configurações do Cypress
 As configurações do Cypress podem ser feitas via linha de comando ou no arquivo cypress.json
