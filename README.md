@@ -1,7 +1,44 @@
-# Apostila de comandos do Cypress
+# Apostila para automação de testes com Cypress
+
+##  Lista de Conteúdos
+
+**CYPRESS**<br />
+[GIT](./git.md)<br />
+
+<details>
+<summary>
+SUMÁRIO
+</summary>
+
+&emsp;&emsp;[Asserções](#asserções-do-cypress)</br>
+- &emsp;&emsp;[Com Expect](#asserções-com-expect)</br>
+	- &emsp;&emsp;[Igualdades](#igualdades)</br>
+	- &emsp;&emsp;[Comparações com objetos](#comparação-com-objetos)</br>
+	- &emsp;&emsp;[Comparações com arrays](#comparação-com-arrays)</br>
+	- &emsp;&emsp;[Comparação de tipos](#comparação-de-tipos)</br>
+	- &emsp;&emsp;[Comparação de Strings](#comparação-de-strings)</br>
+	- &emsp;&emsp;[Comparação de números](#comparação-de-números)</br>
+- &emsp;&emsp;[Com Should](#asserções-com-o-should)</br>
+	- &emsp;&emsp;[Comparação de textos](#comparações-de-textos)</br>
+	- &emsp;&emsp;[Comparando valores e propriedades de campos](#comparando-valores-e-propriedades-de-campos)</br>
+	- &emsp;&emsp;[Verificar se opções estão marcadas](#verificar-se-opções-estão-marcadas)</br>
+	- &emsp;&emsp;[Verificação da exibição de elementos](#verificação-da-exibição-de-elementos)</br>
+&emsp;&emsp;[Interações com elementos](#interação-com-elementos)</br>
+&emsp;&emsp;[Debug](#debug)</br>
+&emsp;&emsp;[Hooks](#hooks)</br>
+&emsp;&emsp;[Comandos Customizáveis](#comandos-customizáveis)</br>
+&emsp;&emsp;[Configurações do Cypress](#configurações-do-cypress)</br>
+&emsp;&emsp;[Plugins](#plugins)</br>
+</details>
+
+---
+
 [Documentação oficial](https://docs.cypress.io/) do Cypress.
+
 ## Asserções do Cypress
+
 ### Asserções com Expect
+
 Há algumas formas de se fazer validações utilizando o Cypress, o Expect é uma delas.  Ele possui um parâmetro obrigatório que é o valor que está sendo comparado. O segundo parâmetro é opcional e pode ser passada uma string qualquer.
 Notação: `expect(valorComparado, “mensagem qualquer”);`
 Possui vários métodos de comparação, os principais estão listados abaixo.
@@ -12,25 +49,30 @@ Possui vários métodos de comparação, os principais estão listados abaixo.
 
   Exemplos:
 
-  `expect(1).equal(1);`
+```js
+expect(1).equal(1);
 
-  `expect(1).to.be.equal(1);`
+expect(1).to.be.equal(1);
 
-  `expect(2).not.to.be.equal(1);`
+expect(2).not.to.be.equal(1);
+```
 
 - **true/false** – Verifica se um valor ou comparação é verdadeira ou falsa.
 
   Exemplos:
 
-  `expect(0 == 0).to.be.true;`
+```js
+expect(0 == 0).to.be.true;
 
-  `expect(1 == 0).to.be.false;`
+expect(1 == 0).to.be.false;
+```
 
 - **null** – Verifica se um valor é nulo
 
   Exemplo:
-
-  `expect(null).to.be.null;`
+```js
+  expect(null).to.be.null;
+```
 
 - **undefined** – Verifica se um valor de uma variável não foi definido.
 
@@ -424,38 +466,44 @@ Notação: `cy.get(“elemento”).should(“comparação”, resultadoEsperado)
 
 	Exemplos:
 
-	`cy.get(“#form input[type=name]”).as(“name”);`
+```js
+	cy.get(“#form input[type=name]”).as(“name”);
 
-	`cy.get(“@name”).type(“Tiago Lopes”);`
+	cy.get(“@name”).type(“Tiago Lopes”);
 
-		cy.window().then(window => {
-			cy.stub(window, “open”).as(“winOpen”);
-		});
+	cy.window().then(window => {
+		cy.stub(window, “open”).as(“winOpen”);
+	});
 
-	`cy.get(“@winOpen”).should(“be.called”);`
+	cy.get(“@winOpen”).should(“be.called”);
 
-	`cy.intercept(“GET”, “/users*”).as(“rotaUsuarios”);`
+	cy.intercept(“GET”, “/users*”).as(“rotaUsuarios”);
 
-	`cy.wait(“@rotaUsuarios”);`
+	cy.wait(“@rotaUsuarios”);
+```
 	
 - **fixture** - Carrega um arquivo de Fixtures para usar como massa de teste ou mock de retorno de chamadas de APIs, por padrão, o Cypress irá buscar o arquivo dentro da pasta fixtures.
 
 	Exemplo:
 	
-		cy.fixture('users').then(user => {
-			cy.get('#name').type(user.name);
-			cy.get('#age').type(user.age);
-		})
+```js
+	cy.fixture('users').then(user => {
+		cy.get('#name').type(user.name);
+		cy.get('#age').type(user.age);
+	})
+```
 		
 - **each** - Quando o Cypress encontra vários elementos com o mesmo seletor, é possível iterá-los utilizando o método **each**.
 	
 	Exemplo:
 	
-		cy.get('#checkboxFood').each($el => {
-			if ($el.val() !== 'pizza') {
-				cy.wrap($el).check();
-			}
-		})
+```js
+	cy.get('#checkboxFood').each($el => {
+		if ($el.val() !== 'pizza') {
+			cy.wrap($el).check();
+		}
+	})
+```
 		
 - **clock** - Consegue alterar a data e hora do sistema, é possível passar uma data como parâmetro e o cypress irá alterar a data e hora do sistema para o valor passado por parêmetro.
 
@@ -502,20 +550,22 @@ Os hooks são utilizados para se executar determinados blocos de código antes o
 É possível adicionar comandos customizáveis no Cypress, ao adicionar o comando no arquivo Commands.js, ele se torna visível em todo o projeto de teste, é bem útil para evitar repetições de código.
 	
 Sintaxe:
-	
-		Cypress.Commands.add('nomeDoComando', (parametros) => {
-		    // implementação do comando
-		})
+```js
+	Cypress.Commands.add('nomeDoComando', (parametros) => {
+		// implementação do comando
+	})
+```
 
 	
 Exemplo:
-	
-		Cypress.Commands.add('clickAlert', (locator, message) => {
-		    cy.get(locator).click()
-		    cy.on('window:alert', msg => {
-			expect(msg).to.be.equal(message)
-		    })
+```js
+	Cypress.Commands.add('clickAlert', (locator, message) => {
+		cy.get(locator).click()
+		cy.on('window:alert', msg => {
+		expect(msg).to.be.equal(message)
 		})
+	})
+```
 		
 Para invocar esse comando, basta chamar por `cy.clickAlert()` em qualquer arquivo de teste.
 
@@ -525,26 +575,28 @@ As configurações do Cypress podem ser feitas via linha de comando ou no arquiv
 - **SelectorPlayground** – Essa configuração em específica, pode ser feita no arquivo index.js dentro da pasta support e serve para fazer alterações no funcionamento do SelectorPlayground (Ferramenta que consegue gerar um seletor do elemento HTML selecionado). Uma das alterações que podem ser feita, é alterar a ordem de prioridade dos seletores que ele busca, conforme o exemplo abaixo:
 
 	Exemplo:
-	
-		Cypress.SelectorPlayground.defaults({
-			selectorPriority: [
-				‘id’,
-				‘data-testid’,
-				‘data-cy’
-				‘class’,
-				‘attributes’,
-				‘tag’,
-				‘nth-child’
-			];
-		});
+```js
+	Cypress.SelectorPlayground.defaults({
+		selectorPriority: [
+			‘id’,
+			‘data-testid’,
+			‘data-cy’
+			‘class’,
+			‘attributes’,
+			‘tag’,
+			‘nth-child’
+		];
+	});
+```
 
 - **defaultCommandTimeout** – Recebe um número. Valor em milissegundos da espera do Cypress pra encontrar algum elemento ou fazer uma asserção. O valor padrão é de 4000 milissegundos (4 segundos).
 
 	Exemplo:
-	
-		{
-			“defaultCommandTimeout” : 6000
-		}
+```js
+	{
+		“defaultCommandTimeout” : 6000
+	}
+```
 
 ## Plugins
 O Cypress possui muitas opções de plugins para aumentar as suas funcionalidades.
@@ -554,18 +606,19 @@ O Cypress possui muitas opções de plugins para aumentar as suas funcionalidade
 
 	Exemplos:
 	
-	`cy.xpath(“/html/body/div/h1”);`
+```js
+	cy.xpath(“/html/body/div/h1”);
 	
-	`cy.xpath(“//h1”);`
+	cy.xpath(“//h1”);
 	
-	`cy.xpath(“//input[contains(@onclick, ’Francisco’)]”);`
+	cy.xpath(“//input[contains(@onclick, ’Francisco’)]”);
 	
-	`cy.xpath(“//input[@id=’name’]”).type(“Tiago Lopes”);`
+	cy.xpath(“//input[@id=’name’]”).type(“Tiago Lopes”);
 	
-	`cy.xpath(“//table//td[contains(., ‘Valor’)]”);`
+	cy.xpath(“//table//td[contains(., ‘Valor’)]”);
 	
-	`cy.xpath(“//[contains(., “Tiago”)]/following-sibling::td”);`
+	cy.xpath(“//[contains(., “Tiago”)]/following-sibling::td”);
+```
 	
 	[Site](https://www.red-gate.com/simple-talk/development/dotnet-development/xpath-css-dom-and-selenium-the-rosetta-stone/) com exemplos de xpath.
 	
-
