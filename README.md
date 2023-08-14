@@ -10,7 +10,7 @@
 SUMÁRIO
 </summary>
 
-&emsp;&emsp;[Asserções](#asserções-do-cypress)</br>
+&emsp;&emsp;[Asserções](#asserções-do-cypress)
 - &emsp;&emsp;[Com Expect](#asserções-com-expect)</br>
 	- &emsp;&emsp;[Igualdades](#igualdades)</br>
 	- &emsp;&emsp;[Comparações com objetos](#comparação-com-objetos)</br>
@@ -23,6 +23,7 @@ SUMÁRIO
 	- &emsp;&emsp;[Comparando valores e propriedades de campos](#comparando-valores-e-propriedades-de-campos)</br>
 	- &emsp;&emsp;[Verificar se opções estão marcadas](#verificar-se-opções-estão-marcadas)</br>
 	- &emsp;&emsp;[Verificação da exibição de elementos](#verificação-da-exibição-de-elementos)</br>
+
 &emsp;&emsp;[Interações com elementos](#interação-com-elementos)</br>
 &emsp;&emsp;[Debug](#debug)</br>
 &emsp;&emsp;[Hooks](#hooks)</br>
