@@ -1,0 +1,167 @@
+{
+  "main": {
+    "id": "2234b1ea8c894c28",
+    "type": "split",
+    "children": [
+      {
+        "id": "60c3596793bf7109",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "872fee0d288d0a99",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "aula02-localizacao.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "ecfe1fb5977ee7fa",
+    "type": "split",
+    "children": [
+      {
+        "id": "d563d1fc8be49cb7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bab238b51a12962b",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "603b9575485f4891",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "082ac693e46d8f51",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "right": {
+    "id": "5c051c35ee945aa3",
+    "type": "split",
+    "children": [
+      {
+        "id": "37cce27cbcca159e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "21c244c3bf320176",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "aula02-localizacao.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "2dacc8e833189c40",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "aula02-localizacao.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "6cf51cef447206fb",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "299f44008c6f9b42",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "aula02-localizacao.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir a troca rápida": false,
+      "graph:Abrir visualização em gráfico": false,
+      "canvas:Criar novo canvas": false,
+      "daily-notes:Abrir a nota de hoje": false,
+      "templates:Inserir modelo": false,
+      "command-palette:Abrir paleta de comandos": false
+    }
+  },
+  "active": "872fee0d288d0a99",
+  "lastOpenFiles": [
+    "imagens/preco-pedido-e-vacancia.png",
+    "imagens/vacancia-logistica-30km-sao-paulo.png",
+    "imagens/vacancia-logistica.png",
+    "imagens/vacancia-fisica-sao-paulo.png",
+    "imagens/dinamica-preco-sao-paulo.png",
+    "imagens/vacancia-media.png",
+    "imagens/vacancia-sao-paulo.png",
+    "imagens/fisica_x_financeira.png",
+    "imagens/vacancia-relatorio-gerencial.png",
+    "imagens/vacancia.png",
+    "aula02-localizacao.md",
+    "aula01-o-que-sao-fiis.md",
+    "imagens/como-ganhar-dinheiro-com-fiis.png",
+    "imagens"
+  ]
+}

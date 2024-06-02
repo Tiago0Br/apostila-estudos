@@ -1,0 +1,18 @@
+{
+  "variables": {
+    "socialNetworks": {
+      "medias": [
+        {
+          "name": "LinkedIn",
+          "url": "https://www.linkedin.com/in/tiago-lopes-7ab0b71a4",
+          "icon": "linkedin"
+        },
+        {
+          "name": "Github",
+          "url": "https://github.com/Tiago0Br",
+          "icon": "github"
+        }
+      ]
+    }
+  }
+}
