@@ -1,5 +1,5 @@
 ##  Lista de Conteúdos
-[SELECT](./README.md)<br />
+[SELECT](index.md)<br />
 **NORMALIZAÇÃO**<br />
 [VIEWS, TRIGGERS E PROCEDURES](./views_procedures_triggers.md)
 
