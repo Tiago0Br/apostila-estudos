@@ -1,0 +1,176 @@
+{
+  "main": {
+    "id": "c61c579917f85e48",
+    "type": "split",
+    "children": [
+      {
+        "id": "7c16b7c1a08403de",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3051e3c9242c8db4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "aula-10-por-que-milionarios-morrem-pobres.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "890a9f814d9a6e9c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "aula-11-a-sorte-de-bill-gates.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "0b02c414dee31e85",
+    "type": "split",
+    "children": [
+      {
+        "id": "aea40b798103b82a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fc3fe1e0054d232b",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "923cabd687815f65",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "4480e38cae7db7b8",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 211.5,
+    "collapsed": true
+  },
+  "right": {
+    "id": "670474d743076023",
+    "type": "split",
+    "children": [
+      {
+        "id": "aa9ba609ec8fd533",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b836a5cfcf271be9",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "aula-11-a-sorte-de-bill-gates.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "5a225990875cd73a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "aula-11-a-sorte-de-bill-gates.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "53a3ff0ae8422a8f",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "61abe77ad8c2c57e",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "aula-11-a-sorte-de-bill-gates.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir a troca rápida": false,
+      "graph:Abrir visualização em gráfico": false,
+      "canvas:Criar novo canvas": false,
+      "daily-notes:Abrir a nota de hoje": false,
+      "templates:Inserir modelo": false,
+      "command-palette:Abrir paleta de comandos": false
+    }
+  },
+  "active": "890a9f814d9a6e9c",
+  "lastOpenFiles": [
+    "aula-10-por-que-milionarios-morrem-pobres.md",
+    "aula-11-a-sorte-de-bill-gates.md",
+    "index.md",
+    "aula-07-o-irracional-dos-investimentos.md",
+    "aula-06-colocando-em-pratica.md",
+    "Sem título",
+    "2024-03-24.md",
+    "imagens/metodo-smart.png",
+    "Pasted image 20240324151027.png",
+    "imagens"
+  ]
+}
