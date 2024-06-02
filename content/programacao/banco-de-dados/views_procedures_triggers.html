@@ -1,0 +1,585 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Banco de dados - Views, Procedures e Triggers · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.6.20">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../../testes/cypress/" />
+    
+    
+    <link rel="prev" href="normalizacao.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Sobre</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    O Projeto
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Capítulos</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introdução
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../html-css/flexbox.html">
+            
+                <a href="../html-css/flexbox.html">
+            
+                    
+                    HTML e CSS - Display flex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../html-css/responsividade.html">
+            
+                <a href="../html-css/responsividade.html">
+            
+                    
+                    HTML e CSS - Responsividade
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../php/Basico.html">
+            
+                <a href="../php/Basico.html">
+            
+                    
+                    PHP - Básico
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../php/Strings.html">
+            
+                <a href="../php/Strings.html">
+            
+                    
+                    PHP - Strings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Banco de Dados - Básico
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="normalizacao.html">
+            
+                <a href="normalizacao.html">
+            
+                    
+                    Banco de Dados - Normalização
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.8" data-path="views_procedures_triggers.html">
+            
+                <a href="views_procedures_triggers.html">
+            
+                    
+                    Banco de dados - Views, Procedures e Triggers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="../../testes/cypress/">
+            
+                <a href="../../testes/cypress/">
+            
+                    
+                    Testes com Cypress
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="../../financas/cursos/imersao-fiis/aula01-o-que-sao-fiis.html">
+            
+                <a href="../../financas/cursos/imersao-fiis/aula01-o-que-sao-fiis.html">
+            
+                    
+                    Fundos imobiliários - O que são FIIs?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" data-path="../../financas/cursos/imersao-fiis/aula02-localizacao.html">
+            
+                <a href="../../financas/cursos/imersao-fiis/aula02-localizacao.html">
+            
+                    
+                    Fundos imobiliários - Localização e vacância
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    let buttonsWrapper = document.getElementById('sharing-buttons');
+    buttonsWrapper.querySelectorAll('button').forEach(button => {
+      button.addEventListener('click', function (event) {
+        let url = location.href;
+        let baseUrl = event.target.dataset.sharingBaseUrl
+          .replace(":url", url)
+          .replace(":text", buttonsWrapper.dataset.sharingText)
+        window.open(baseUrl);
+      })
+    })
+  })
+</script>
+
+
+
+<a class="btn pull-right" aria-label="" href="https://www.linkedin.com/in/tiago-lopes-7ab0b71a4" target="_blank">
+  <i class="fa fa-linkedin"></i>
+</a>
+
+
+
+
+<a class="btn pull-right" aria-label="" href="https://github.com/Tiago0Br" target="_blank">
+  <i class="fa fa-github"></i>
+</a>
+
+
+
+
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >Banco de dados - Views, Procedures e Triggers</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>Lista de comandos SQL aprendidos na disciplina de Banco de dados.</p>
+<h2 id="lista-de-conteúdos">Lista de Conteúdos</h2>
+<p><a href="./">SELECT</a><br>
+<a href="normalizacao.html">NORMALIZAÇÃO</a><br>
+<strong>VIEWS, TRIGGERS E PROCEDURES</strong></p>
+<h2 id="lista-de-comandos">Lista de Comandos</h2>
+<h2 id="functions">FUNCTIONS</h2>
+<p>É possível criar funções que retornam valores</p>
+<h4 id="create-function">CREATE FUNCTION</h4>
+<p>Comando para criação de funções, estas podem ou não receber parâmetros e retornam algum conteúdo.<br>
+<strong>Exemplos:</strong></p>
+<pre><code class="lang-sql"><span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">FUNCTION</span> hello_world() <span class="hljs-comment">-- Criação de função sem parâmetros</span>
+<span class="hljs-keyword">RETURNS</span> <span class="hljs-type">VARCHAR</span>(<span class="hljs-number">20</span>)
+    <span class="hljs-keyword">RETURN</span> &quot;HELLO WORLD!&quot;;
+</code></pre>
+<pre><code class="lang-sql"><span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">FUNCTION</span> FUNC_SOMA(PI_NRO1 <span class="hljs-type">INT</span>, PI_NRO2 <span class="hljs-type">INT</span>) <span class="hljs-comment">-- Nome da funções e parâmetros que ela recebe</span>
+<span class="hljs-keyword">RETURNS</span> <span class="hljs-type">INT</span> <span class="hljs-comment">-- Tipo de dados que ela retorna</span>
+    <span class="hljs-keyword">RETURN</span> PI_NRO1 <span class="hljs-operator">+</span> PI_NRO2; <span class="hljs-comment">-- Valor que ela retorna</span>
+
+<span class="hljs-keyword">SELECT</span> FUNC_SOMA(<span class="hljs-number">20</span>, <span class="hljs-number">5</span>) <span class="hljs-keyword">AS</span> &quot;Resultado&quot;; <span class="hljs-comment">-- Execução da função</span>
+</code></pre>
+<p>Quando a função possui variáveis, é necessário utilizar delimitadores antes do início e após o fim da função</p>
+<pre><code class="lang-sql">DELIMITER <span class="hljs-operator">/</span><span class="hljs-operator">/</span>
+<span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">OR</span> REPLACE <span class="hljs-keyword">FUNCTION</span> FNC_SOMA_ID_AUTOR() <span class="hljs-keyword">RETURNS</span> <span class="hljs-type">INT</span>
+<span class="hljs-keyword">BEGIN</span>
+    <span class="hljs-keyword">DECLARE</span> soma <span class="hljs-type">INT</span>;
+    <span class="hljs-keyword">SELECT</span> <span class="hljs-built_in">SUM</span>(a.id_autor) <span class="hljs-keyword">INTO</span> soma <span class="hljs-keyword">FROM</span> autores a;
+    <span class="hljs-keyword">RETURN</span> soma;
+<span class="hljs-keyword">END</span> <span class="hljs-operator">/</span><span class="hljs-operator">/</span>
+DELIMITER ;
+</code></pre>
+<h2 id="views">Views</h2>
+<p>Uma View funciona como uma tabela, é possível criar Views que trazem dados de colunas específicas, são bem úteis para consultas que são executadas repetidas vezes, dessa forma, criando uma view para uma consulta complexa, basta executar a view para obter o retorno esperado.<br>
+<strong>Exemplo:</strong></p>
+<pre><code class="lang-sql"><span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">OR</span> REPLACE <span class="hljs-keyword">VIEW</span> vw_livros <span class="hljs-keyword">AS</span> <span class="hljs-comment">-- Cria a view se ela não existir, caso contrário substitui</span>
+<span class="hljs-keyword">SELECT</span> l.id_livro, l.titulo, l.isbn, l.ano, c.descricao <span class="hljs-keyword">AS</span> <span class="hljs-string">&apos;categoria&apos;</span>, e.nome <span class="hljs-keyword">AS</span> <span class="hljs-string">&apos;editora&apos;</span>
+<span class="hljs-keyword">FROM</span> livros l
+<span class="hljs-keyword">JOIN</span> categorias c
+<span class="hljs-keyword">USING</span>(id_categoria)
+<span class="hljs-keyword">JOIN</span> editoras e
+<span class="hljs-keyword">USING</span>(id_editora)
+<span class="hljs-keyword">ORDER</span> <span class="hljs-keyword">BY</span> l.titulo;
+</code></pre>
+<p>Para se executar essa view, basta chamar ela utilizando um SELECT, como numa tabela comum</p>
+<pre><code class="lang-sql"><span class="hljs-keyword">SELECT</span> <span class="hljs-operator">*</span> <span class="hljs-keyword">FROM</span> vw_livros; <span class="hljs-comment">-- Executa a view, retornando todos os seus dados</span>
+</code></pre>
+<h2 id="triggers">Triggers</h2>
+<p>São funções que são acionadas quando determinados eventos ocorrem.<br>
+<strong>Exemplos:</strong></p>
+<pre><code class="lang-sql">DELIMITER $$
+    <span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">OR</span> REPLACE <span class="hljs-keyword">TRIGGER</span> trg_ins_autor
+    BEFORE <span class="hljs-keyword">INSERT</span> <span class="hljs-comment">-- Essa trigger é executada antes de qualquer inseração na tabela &quot;autores&quot;</span>
+    <span class="hljs-keyword">ON</span> autores
+    <span class="hljs-keyword">FOR</span> <span class="hljs-keyword">EACH</span> <span class="hljs-type">ROW</span> <span class="hljs-comment">-- Itera sobre cada registro da tabela</span>
+    <span class="hljs-keyword">BEGIN</span>
+        IF NEW.nome <span class="hljs-keyword">IS</span> <span class="hljs-keyword">NULL</span> <span class="hljs-keyword">THEN</span> <span class="hljs-comment">-- &quot;NEW&quot; faz referência ao novo registro que será inserido</span>
+            SIGNAL <span class="hljs-keyword">SQLSTATE</span> <span class="hljs-string">&apos;45000&apos;</span>
+            <span class="hljs-keyword">SET</span> MESSAGE_TEXT <span class="hljs-operator">=</span> <span class="hljs-string">&apos;Digite um nome para o autor!&apos;</span>; <span class="hljs-comment">-- Exibe um erro caso não seja inserido o nome do autor</span>
+        <span class="hljs-keyword">END</span> IF;
+   <span class="hljs-keyword">END</span>$$
+DELIMITER ;
+</code></pre>
+<h2 id="procedures">Procedures</h2>
+<p>São funções que realizam ações dentro do banco de dados, como inserção de dados, alteração de dados, consultas, entre outras ações. Pode ou não receber parâmetros.<br>
+<strong>Exemplos:</strong></p>
+<pre><code class="lang-sql">DELIMITER $$
+<span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">PROCEDURE</span> PRC_INCLUIR_CATEGORIA(
+    <span class="hljs-keyword">IN</span> pi_descricao_categoria <span class="hljs-type">VARCHAR</span>(<span class="hljs-number">100</span>) <span class="hljs-comment">-- o &quot;IN&quot; indica que é um parâmetro de &quot;entrada&quot;</span>
+)
+<span class="hljs-keyword">BEGIN</span>
+    <span class="hljs-keyword">INSERT</span> <span class="hljs-keyword">INTO</span> categorias(descricao)
+    <span class="hljs-keyword">VALUES</span> (pi_descricao_categoria); <span class="hljs-comment">-- Utiliza o parâmetro recebido na chamada da função</span>
+<span class="hljs-keyword">END</span> $$
+DELIMITER ;
+</code></pre>
+<p>Para executar a procedure basta utilizar o comando &quot;CALL&quot; passando o nome da procedure e os parâmetros dentro de parênteses.</p>
+<pre><code class="lang-sql"><span class="hljs-keyword">CALL</span> PRC_INCLUIR_CATEGORIA(&quot;Suspense&quot;); <span class="hljs-comment">-- Chama a função passando o parâmetro entre parênteses</span>
+</code></pre>
+<pre><code class="lang-sql">DELIMITER $$
+<span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">PROCEDURE</span> IF <span class="hljs-keyword">NOT</span> <span class="hljs-keyword">EXISTS</span> PRC_INCLUIR_AUTOR(<span class="hljs-keyword">IN</span> pi_nome <span class="hljs-type">VARCHAR</span>(<span class="hljs-number">100</span>), <span class="hljs-keyword">IN</span> pi_nacionalidade <span class="hljs-type">INT</span>)
+<span class="hljs-keyword">BEGIN</span>
+    <span class="hljs-keyword">INSERT</span> <span class="hljs-keyword">INTO</span> autores(nome, id_nacionalidade)
+    <span class="hljs-keyword">VALUES</span> (pi_nome, pi_nacionalidade);
+<span class="hljs-keyword">END</span> $$
+DELIMITER ;
+
+<span class="hljs-keyword">CALL</span> PRC_INCLUIR_AUTOR(&quot;James Dashner&quot;, <span class="hljs-number">3</span>);
+</code></pre>
+<p>Para parâmetros de saída utiliza-se &quot;OUT&quot; antes do nome do parâmetro</p>
+<pre><code class="lang-sql">DELIMITER $$
+<span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">PROCEDURE</span> PCR_LISTAR_QTDE_CATEGORIA(
+    <span class="hljs-keyword">OUT</span> pi_qtde_categoria <span class="hljs-type">INT</span> <span class="hljs-comment">-- Recebe um parâmetro de saída</span>
+)
+<span class="hljs-keyword">BEGIN</span>
+    <span class="hljs-keyword">SELECT</span> <span class="hljs-built_in">COUNT</span>(<span class="hljs-operator">*</span>)
+    <span class="hljs-keyword">INTO</span> pi_qtde_categoria
+    <span class="hljs-keyword">FROM</span> categorias;
+<span class="hljs-keyword">END</span> $$
+DELIMITER ;
+</code></pre>
+<p>Um parâmetro de saída pode ser armazenado numa variável e utilizado fora da procedure, em um &quot;SELECT&quot; ou até em uma outra procedure por exemplo.</p>
+<pre><code class="lang-sql"><span class="hljs-keyword">CALL</span> PCR_LISTAR_QTDE_CATEGORIA(<span class="hljs-variable">@total</span>); <span class="hljs-comment">-- O parâmetro de saída foi armazenado nessa variável &quot;@local&quot;</span>
+<span class="hljs-keyword">SELECT</span> <span class="hljs-variable">@total</span>; <span class="hljs-comment">-- A variável está sendo exibida em um SELECT</span>
+</code></pre>
+<pre><code class="lang-sql">DELIMITER $$
+<span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">OR</span> REPLACE <span class="hljs-keyword">PROCEDURE</span> PRC_QTDE_AUTOR_POR_NACIONALIDADE(<span class="hljs-keyword">IN</span> pi_nacionalidade <span class="hljs-type">INT</span>, <span class="hljs-keyword">OUT</span> pi_qtde <span class="hljs-type">INT</span>)
+<span class="hljs-keyword">BEGIN</span>
+    <span class="hljs-keyword">SELECT</span> <span class="hljs-built_in">COUNT</span>(<span class="hljs-operator">*</span>)
+    <span class="hljs-keyword">INTO</span> pi_qtde
+    <span class="hljs-keyword">FROM</span> autores a
+    <span class="hljs-keyword">WHERE</span> a.id_nacionalidade <span class="hljs-operator">=</span> pi_nacionalidade;
+<span class="hljs-keyword">END</span> $$
+DELIMITER ;
+
+<span class="hljs-keyword">CALL</span> PRC_QTDE_AUTOR_POR_NACIONALIDADE(<span class="hljs-number">5</span>, <span class="hljs-variable">@qtde</span>);
+<span class="hljs-keyword">SELECT</span> <span class="hljs-variable">@qtde</span>;
+</code></pre>
+<p>Para parâmetros que são usados na entrada e também na saída usa-se &quot;INOUT&quot; antes do parâmetro</p>
+<pre><code class="lang-sql">DELIMITER $$
+<span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">PROCEDURE</span> PCR_QUADRADO (
+    <span class="hljs-keyword">INOUT</span> pi_valor <span class="hljs-type">INT</span> <span class="hljs-comment">-- Recebe um parâmetro de entrada e saída</span>
+)
+<span class="hljs-keyword">BEGIN</span>
+    <span class="hljs-keyword">SET</span> pi_valor <span class="hljs-operator">=</span> POW(pi_valor, <span class="hljs-number">2</span>); <span class="hljs-comment">-- Altera o valor desse parâmetro e retorna o valor novo</span>
+<span class="hljs-keyword">END</span> $$
+DELIMITER ;
+</code></pre>
+<p>Para parâmetros do tipo &quot;INOUT&quot;, deve ser declarada uma variável com um valor inicial antes de executar a procedure</p>
+<pre><code class="lang-sql"><span class="hljs-keyword">SET</span> <span class="hljs-variable">@valor</span> <span class="hljs-operator">=</span> <span class="hljs-number">10</span>; <span class="hljs-comment">-- Cria uma variável &quot;@valor&quot; que recebe o valor inicial 10</span>
+<span class="hljs-keyword">CALL</span> PCR_QUADRADO(<span class="hljs-variable">@valor</span>); <span class="hljs-comment">-- Ao executar a procedure, o valor da variável é alterado</span>
+<span class="hljs-keyword">SELECT</span> <span class="hljs-variable">@valor</span>; <span class="hljs-comment">-- Exibe o novo valor dessa variável</span>
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="normalizacao.html" class="navigation navigation-prev " aria-label="Previous page: Banco de Dados - Normalização">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../../testes/cypress/" class="navigation navigation-next " aria-label="Next page: Testes com Cypress">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Banco de dados - Views, Procedures e Triggers","level":"2.8","depth":1,"next":{"title":"Testes com Cypress","level":"2.9","depth":1,"path":"content/testes/cypress/index.md","ref":"content/testes/cypress/index.md","articles":[]},"previous":{"title":"Banco de Dados - Normalização","level":"2.7","depth":1,"path":"content/programacao/banco-de-dados/normalizacao.md","ref":"content/programacao/banco-de-dados/normalizacao.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"socialNetworks":{"medias":[{"name":"LinkedIn","url":"https://www.linkedin.com/in/tiago-lopes-7ab0b71a4","icon":"linkedin"},{"name":"Github","url":"https://github.com/Tiago0Br","icon":"github"}]}},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"content/programacao/banco-de-dados/views_procedures_triggers.md","mtime":"2024-06-02T22:46:51.496Z","type":"markdown"},"gitbook":{"version":"3.6.20","time":"2024-06-02T22:47:04.993Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,924 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Testes com Cypress · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.6.20">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../../financas/cursos/imersao-fiis/aula01-o-que-sao-fiis.html" />
+    
+    
+    <link rel="prev" href="../../programacao/banco-de-dados/views_procedures_triggers.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Sobre</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    O Projeto
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Capítulos</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introdução
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../../programacao/html-css/flexbox.html">
+            
+                <a href="../../programacao/html-css/flexbox.html">
+            
+                    
+                    HTML e CSS - Display flex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../../programacao/html-css/responsividade.html">
+            
+                <a href="../../programacao/html-css/responsividade.html">
+            
+                    
+                    HTML e CSS - Responsividade
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../../programacao/php/Basico.html">
+            
+                <a href="../../programacao/php/Basico.html">
+            
+                    
+                    PHP - Básico
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../../programacao/php/Strings.html">
+            
+                <a href="../../programacao/php/Strings.html">
+            
+                    
+                    PHP - Strings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../../programacao/banco-de-dados/">
+            
+                <a href="../../programacao/banco-de-dados/">
+            
+                    
+                    Banco de Dados - Básico
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../../programacao/banco-de-dados/normalizacao.html">
+            
+                <a href="../../programacao/banco-de-dados/normalizacao.html">
+            
+                    
+                    Banco de Dados - Normalização
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="../../programacao/banco-de-dados/views_procedures_triggers.html">
+            
+                <a href="../../programacao/banco-de-dados/views_procedures_triggers.html">
+            
+                    
+                    Banco de dados - Views, Procedures e Triggers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.9" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Testes com Cypress
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="../../financas/cursos/imersao-fiis/aula01-o-que-sao-fiis.html">
+            
+                <a href="../../financas/cursos/imersao-fiis/aula01-o-que-sao-fiis.html">
+            
+                    
+                    Fundos imobiliários - O que são FIIs?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" data-path="../../financas/cursos/imersao-fiis/aula02-localizacao.html">
+            
+                <a href="../../financas/cursos/imersao-fiis/aula02-localizacao.html">
+            
+                    
+                    Fundos imobiliários - Localização e vacância
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    let buttonsWrapper = document.getElementById('sharing-buttons');
+    buttonsWrapper.querySelectorAll('button').forEach(button => {
+      button.addEventListener('click', function (event) {
+        let url = location.href;
+        let baseUrl = event.target.dataset.sharingBaseUrl
+          .replace(":url", url)
+          .replace(":text", buttonsWrapper.dataset.sharingText)
+        window.open(baseUrl);
+      })
+    })
+  })
+</script>
+
+
+
+<a class="btn pull-right" aria-label="" href="https://www.linkedin.com/in/tiago-lopes-7ab0b71a4" target="_blank">
+  <i class="fa fa-linkedin"></i>
+</a>
+
+
+
+
+<a class="btn pull-right" aria-label="" href="https://github.com/Tiago0Br" target="_blank">
+  <i class="fa fa-github"></i>
+</a>
+
+
+
+
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >Testes com Cypress</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="apostila-para-automação-de-testes-com-cypress">Apostila para automação de testes com Cypress</h1>
+<h2 id="lista-de-conteúdos">Lista de Conteúdos</h2>
+<p><strong>CYPRESS</strong><br>
+<a href="git.md">GIT</a><br></p>
+<details>
+<summary>
+SUMÁRIO
+</summary>
+
+  [Asserções](#asserções-do-cypress)
+-   [Com Expect](#asserções-com-expect)<br>
+    -   [Igualdades](#igualdades)<br>
+    -   [Comparações com objetos](#comparação-com-objetos)<br>
+    -   [Comparações com arrays](#comparação-com-arrays)<br>
+    -   [Comparação de tipos](#comparação-de-tipos)<br>
+    -   [Comparação de Strings](#comparação-de-strings)<br>
+    -   [Comparação de números](#comparação-de-números)<br>
+-   [Com Should](#asserções-com-o-should)<br>
+    -   [Comparação de textos](#comparações-de-textos)<br>
+    -   [Comparando valores e propriedades de campos](#comparando-valores-e-propriedades-de-campos)<br>
+    -   [Verificar se opções estão marcadas](#verificar-se-opções-estão-marcadas)<br>
+    -   [Verificação da exibição de elementos](#verificação-da-exibição-de-elementos)<br>
+
+  [Interações com elementos](#interação-com-elementos)<br>
+  [Debug](#debug)<br>
+  [Hooks](#hooks)<br>
+  [Comandos Customizáveis](#comandos-customizáveis)<br>
+  [Configurações do Cypress](#configurações-do-cypress)<br>
+  [Plugins](#plugins)<br>
+</details>
+
+<hr>
+<p><a href="https://docs.cypress.io/" target="_blank">Documentação oficial</a> do Cypress.</p>
+<h2 id="asserções-do-cypress">Asserções do Cypress</h2>
+<h3 id="asserções-com-expect">Asserções com Expect</h3>
+<p>Há algumas formas de se fazer validações utilizando o Cypress, o Expect é uma delas.  Ele possui um parâmetro obrigatório que é o valor que está sendo comparado. O segundo parâmetro é opcional e pode ser passada uma string qualquer.
+Notação: <code>expect(valorComparado, “mensagem qualquer”);</code>
+Possui vários métodos de comparação, os principais estão listados abaixo.</p>
+<h4 id="igualdades">Igualdades</h4>
+<ul>
+<li><p><strong>equal</strong> – Verifica se um valor é exatamente igual ao outro. </p>
+<p>Exemplos:</p>
+</li>
+</ul>
+<pre><code class="lang-js">expect(<span class="hljs-number">1</span>).equal(<span class="hljs-number">1</span>);
+
+expect(<span class="hljs-number">1</span>).to.be.equal(<span class="hljs-number">1</span>);
+
+expect(<span class="hljs-number">2</span>).not.to.be.equal(<span class="hljs-number">1</span>);
+</code></pre>
+<ul>
+<li><p><strong>true/false</strong> – Verifica se um valor ou comparação é verdadeira ou falsa.</p>
+<p>Exemplos:</p>
+</li>
+</ul>
+<pre><code class="lang-js">expect(<span class="hljs-number">0</span> == <span class="hljs-number">0</span>).to.be.true;
+
+expect(<span class="hljs-number">1</span> == <span class="hljs-number">0</span>).to.be.false;
+</code></pre>
+<ul>
+<li><p><strong>null</strong> – Verifica se um valor é nulo</p>
+<p>Exemplo:</p>
+<pre><code class="lang-js">expect(<span class="hljs-literal">null</span>).to.be.null;
+</code></pre>
+</li>
+<li><p><strong>undefined</strong> – Verifica se um valor de uma variável não foi definido.</p>
+<p>Exemplo:</p>
+<p><code>expect(undefined).to.be.undefined;</code></p>
+</li>
+</ul>
+<h4 id="comparação-com-objetos">Comparação com Objetos</h4>
+<ul>
+<li><p><strong>deep.equal</strong> – Verifica se o conteúdo do objeto é exatamente igual ao conteúdo de outro objeto.</p>
+<p>Exemplo:</p>
+<p><code>expect({nome: “Tiago”}).to.be.deep.equal({nome: “Tiago”});</code></p>
+</li>
+<li><p><strong>eql</strong> – Verifica se um item é igual a outro. Pode ser utilizado para realizar a mesma comparação do exemplo acima.</p>
+</li>
+<li><p><strong>include</strong> – Verifica se o objeto possui determinado valor.</p>
+<p>Exemplo:</p>
+<p><code>expect({nome: “Tiago”, idade: 19}).to.include({idade: 19});</code></p>
+</li>
+<li><p><strong>have.property</strong> – Verifica se esse objeto possui tal propriedade. Também é possível passar o conteúdo da propriedade verificada.</p>
+<p>Exemplos:</p>
+<p><code>expect({nome: “Tiago”}).to.have.property(“nome”);</code></p>
+<p><code>expect({nome: “Tiago”}).to.have.property(“nome”, “Tiago”);</code></p>
+</li>
+<li><p><strong>empty</strong> – Verifica se o objeto está ou não vazio.</p>
+<p>Exemplos:</p>
+<p><code>expect({}).to.be.empty;</code></p>
+<p><code>expect({nome: “tiago”}).to.not.be.empty;</code></p>
+</li>
+</ul>
+<h4 id="comparação-com-arrays">Comparação com arrays</h4>
+<ul>
+<li><p><strong>have.members</strong> – Verifica se o array tem exatamente os mesmos elementos.</p>
+<p>  Exemplo:</p>
+<p>  <code>expect([“maçã”, “uva”]).to.have.members([“maçã”, “uva”]);</code></p>
+</li>
+<li><p><strong>include.members</strong> – Verifica se o array possui os elementos passados.</p>
+<p>  Exemplo:</p>
+<p>  <code>expect([“maçã”, “uva”]).to.include.members([“uva”]);</code></p>
+</li>
+</ul>
+<h4 id="comparação-de-tipos">Comparação de tipos</h4>
+<ul>
+<li><p><strong>a/an</strong> – Verifica o tipo daquela variável/conteúdo. O funcionamento do a e do an são é exatamente o mesmo, eles só diferem-se na semântica.</p>
+<p> Exemplos:</p>
+<p> <code>expect(5).to.be.a(“number”);</code></p>
+<p> <code>expect([]).to.be.an(“array”);</code></p>
+<p> <code>expect({}).to.be.an(“object”);</code></p>
+<p> <code>expect(“”).to.be.a(“string”);</code></p>
+</li>
+</ul>
+<h4 id="comparação-de-strings">Comparação de Strings</h4>
+<ul>
+<li><p><strong>have.length</strong> – Verifica se a string possui determinado tamanho.</p>
+<p>Exemplo:</p>
+<p><code>expect(“oi”).to.have.length(2);</code></p>
+</li>
+<li><p><strong>contains</strong> – Verifica se a string contém uma outra string dentro dela.</p>
+<p>  Exemplo:</p>
+<p>  <code>expect(“Salvo com sucesso!”).to.contains(“sucesso”);</code></p>
+</li>
+<li><p><strong>match</strong> – Para comparações mais complexas utilizando Regex, é utilizado o método “match”.</p>
+<p>  Exemplos:</p>
+<p>  <code>expect(“Salvo com sucesso!”).to.match(/sucesso/);</code></p>
+<p>  <code>expect(“Salvo com sucesso!”).to.match(/^Salvo/);</code></p>
+<p>  <code>expect(“Salvo com sucesso!”).to.match(/sucesso!$/);</code></p>
+<p>  <code>expect(“Salvo com sucesso!”).to.match(/*com/);</code></p>
+</li>
+</ul>
+<h4 id="comparação-de-números">Comparação de números</h4>
+<ul>
+<li><p><strong>above</strong> – Verifica se um número é maior do que outro.</p>
+<p>  Exemplo:</p>
+<p>  <code>expect(5).to.be.above(4);</code></p>
+</li>
+<li><p><strong>below</strong> – Verifica se um número é menor do que outro.</p>
+<p>  Exemplo:</p>
+<p>  <code>expect(5).to.be.below(6);</code></p>
+</li>
+<li><p><strong>closeTo</strong> – Verifica se um número com casas decimais possui um valor próximo de outro número.</p>
+<p>  Exemplo:</p>
+<p>  <code>expect(3.141592).to.be.closeTo(3.1, 0.1);</code></p>
+</li>
+</ul>
+<h3 id="asserções-com-o-should">Asserções com o should</h3>
+<p>Também é possível realizar asserções com o should, funciona basicamente da mesma forma, apenas possui uma sintaxe diferente, também possui os métodos de comparação do expect. O primeiro parâmetro do should é a string contendo a forma de comparação. Dependendo da comparação pode ou não receber mais parâmetros.</p>
+<p>Notação: <code>cy.get(“elemento”).should(“comparação”, resultadoEsperado);</code></p>
+<h4 id="comparações-de-textos">Comparações de textos</h4>
+<ul>
+<li><p><strong>contain</strong> – Verifica se o elemento contém um texto ou outros elementos HTML dentro dele.</p>
+<p>  Exemplo:</p>
+<p>  <code>cy.get(“.alert-success”).should(“contain”,”cadastro realizado”);</code></p>
+</li>
+<li><p><strong>have.text</strong> – Verifica se o elemento possui o texto exato.</p>
+<p>  Exemplo:</p>
+<p>  <code>cy.get(“.error”).should(“have.text”,”Data inválida!”);</code></p>
+</li>
+<li><p><strong>have.not.text</strong> – Verifica se o elemento NÃO possui determinado texto.</p>
+<p>  Exemplo:</p>
+<p>  <code>cy.get(“.success”).should(“have.not.text”,”Data inválida!”);</code></p>
+</li>
+<li><p><strong>include.text</strong> – Verifica se o elemento contém esse texto, mas não precisa ser exato.</p>
+<p>  Exemplo:</p>
+<p>  <code>cy.get(“.alert”).should(“include.text”,”sucesso!”);</code></p>
+</li>
+</ul>
+<h4 id="comparando-valores-e-propriedades-de-campos">Comparando valores e propriedades de campos</h4>
+<ul>
+<li><p><strong>have.value</strong> – Verifica se o elemento possui determinado valor no atributo “value”.</p>
+<p>  Exemplo:</p>
+<p>  <code>cy.get(“input#name”).should(“have.value”,”Tiago Lopes”);</code></p>
+</li>
+</ul>
+<h4 id="verificar-se-opções-estão-marcadas">Verificar se opções estão marcadas</h4>
+<ul>
+<li><p><strong>be.checked</strong> – Verifica se o radio button ou checkbox está marcado.</p>
+<p>  Exemplo:</p>
+<p>  <code>cy.get(“#formOpcao”).should(“be.checked”);</code></p>
+</li>
+<li><p><strong>not.be.checked</strong> – Verifica se a opção não está marcada.</p>
+<p>  Exemplo:</p>
+<p>  <code>cy.get(“#formOpcao”).should(“not.be.checked”);</code></p>
+</li>
+</ul>
+<h4 id="verificação-da-exibição-de-elementos">Verificação da exibição de elementos</h4>
+<ul>
+<li><p><strong>exist</strong> – Verifica se um elemento existe na página.</p>
+<p>  Exemplo:</p>
+<p>  <code>cy.get(“.error”).should(“exist”);</code></p>
+</li>
+<li><p><strong>not.exist</strong> – Verifica se um elemento não existe na página.</p>
+<p>  Exemplo:</p>
+<p>  <code>cy.get(“.error”).should(“not.exist”);</code></p>
+<p>  <strong>Observação:</strong> A asserção “not.exist” retorna nulo, então não dá pra encadear uma nova asserção depois desse comando.</p>
+</li>
+</ul>
+<h2 id="interação-com-elementos">Interação com elementos</h2>
+<ul>
+<li><p><strong>visit</strong> – Visita uma página da web. Caso esteja configurado com uma baseUrl, pode passar o caminho relativo da página.</p>
+<p>  Exemplos:</p>
+<p>  <code>cy.visit(“https://www.google.com/”);</code></p>
+<p>  <code>cy.visit(“/login”);</code></p>
+</li>
+<li><p><strong>title</strong> – Captura o título da página.</p>
+<p>  Exemplo:</p>
+<p>  <code>cy.title();</code></p>
+</li>
+<li><p><strong>get</strong> – Captura elementos da página, recebe como parâmetro o seletor CSS desse elemento.</p>
+<p>  Exemplos:</p>
+<p>  <code>cy.get(“#password”);</code></p>
+<p>  <code>cy.get(“.container”);</code></p>
+<p>  <code>cy.get(“div”);</code></p>
+<p>  <code>cy.get(“input[name=’email’]”);</code></p>
+<p>  <code>cy.get(“div h1 &gt; a”);</code></p>
+<p>  <a href="https://flukeout.github.io/" target="_blank">Jogo</a> para praticar seletores CSS.</p>
+<p>  <a href="https://www.w3schools.com/jquery/jquery_ref_selectors.asp" target="_blank">Documentação</a> da W3Schools de seletores do Jquery.</p>
+<p><strong>Parâmetro</strong> <code>timeout</code>:
+  Recebe um número, é o tempo em milissegundos que o Cypress espera caso não encontre o elemento. Esse parâmetro é útil nos casos em que o elemento demora a ser exibido na página. O timeout padrão do Cypress é de 4 segundos.</p>
+<p>  Exemplos:</p>
+<p>  <code>cy.get(“.success-alert”, { timeout: 10000 });</code></p>
+</li>
+<li><p><strong>contains</strong> – Captura elementos da página com base no seletor CSS ou no texto que esse elemento possui.</p>
+<p>Exemplo:</p>
+<p><code>cy.contains(“Salvar”);</code></p>
+<p><code>cy.contains(“button”, “Salvar”);</code></p>
+</li>
+<li><p><strong>click</strong> – Clica em elementos, como links ou botões.</p>
+<p>Exemplo:</p>
+<p><code>cy.get(“button”).click();</code></p>
+<p><code>cy.get(“a[href=’/salvar’]”).click();</code></p>
+<p>  <strong>Parâmetro</strong> <code>multiple</code>:
+  Se houver mais de um elemento com o mesmo seletor, ele clica em ambos os elementos. Recebe um valor booleando (true/false) , caso não seja passado o padrão é “false”.</p>
+<p>  Exemplo:</p>
+<p>  <code>cy.get(“button”).click({ multiple: true });</code></p>
+</li>
+<li><p><strong>reload</strong> – Recarrega a página.</p>
+<p>  Exemplo:</p>
+<p>  <code>cy.reload();</code></p>
+</li>
+<li><p><strong>type</strong> – Preenche um campo com o conteúdo que for passado como parâmetro.</p>
+<p>  Exemplos:</p>
+<p>  <code>cy.get(‘#user’).type(“admin”);</code></p>
+<p>  <code>cy.get(‘#password’).type(“senha123”);</code></p>
+<p>  É possível simular algumas teclas passando o nome da tecla entre chaves.</p>
+<p>  Exemplos:</p>
+<p>  <code>cy.get(‘#password’).type(“admin{enter}”);</code></p>
+<p>  <code>cy.get(‘#name’).type(“Tiagoo{backspace}”);</code></p>
+<p>  <code>cy.get(‘#user).type(“{selectall}admin”);</code></p>
+<p>  <strong>Parâmetro</strong> <code>delay</code>:
+  Recebe um número, digita o conteúdo mais lentamente conforme o número passado pelo usuário em milissegundos.</p>
+<p>  Exemplo:</p>
+<p>  <code>cy.get(‘#name’).type(“Tiago”, { delay: 100 });</code></p>
+</li>
+<li><p><strong>clear</strong> – Apaga o conteúdo que foi preenchido em um input.</p>
+<p>  Exemplo:</p>
+<p>  <code>cy.get(‘#name’).clear().type(“novo nome”);</code></p>
+</li>
+<li><p><strong>select</strong> – Seleciona uma ou mais opções de um elemento do tipo “Select”. Recebe uma string ou um array de strings com o value ou o texto do element.</p>
+<p>  Exemplos:</p>
+<p>  <code>cy.get(‘#comboCidades’).select(“Campinas”);</code></p>
+<p>  <code>cy.get(‘#animais’).select([“gato”, “cachorro”, “peixe”]);</code></p>
+</li>
+<li><p><strong>find</strong> – Busca por um elemento “dentro” de outro elemento.</p>
+<p>  Exemplos:</p>
+<p>  <code>cy.get(‘#listaCidades’).find(“span”);</code></p>
+<p>  <code>cy.get(‘#animais’).find(“[value=gato]”);</code></p>
+</li>
+<li><p><strong>wait</strong> – Pode ser passado um número para ser usado como tempo de espera em milissegundos, ou um “alias” de alguma requisição, para esperar a sua conclusão.</p>
+<p>  Exemplos:</p>
+<p>  <code>cy.wait(5000);</code></p>
+<p>  <code>cy.wait(‘@requestBuscaCidades’);</code></p>
+</li>
+<li><p><strong>then</strong> – Trabalha com ações assíncronas, utilizado para realizar determinada ação após a conclusão de uma chamada assíncrona. Recebe uma função de callback</p>
+<p>  Exemplos:</p>
+<p>  <code>cy.title().then(title =&gt; console.log(title));</code></p>
+<pre><code>  cy.get(“.success-alert”).invoke(“text”).then(msg =&gt; {
+      expect(msg).to.have.text(“Cadastro realizado!”)
+  });
+</code></pre><p>  <strong>Observação:</strong> o comando should também pode ser utilizado em chamadas assíncronas, porém possui algumas diferenças, enquanto o then aguarda a conclusão da chamada, o should fica tentando realizar a ação mesmo sem a conclusão da chamada. Além disso, o should não permite realizar novas buscas dentro dele, já o then permite.</p>
+</li>
+<li><p><strong>wrap</strong> – Trasforma o item passado por parâmetro em um elemento manipulável pelo Cypress, possibilitando realizar validações com o should, trabalhar com promises e realizar outras manipulações do elemento.</p>
+<p>  Exemplos:</p>
+<p>  <code>const obj = { nome: “Tiago”, sobrenome: “Lopes” };</code></p>
+<p>  <code>cy.wrap(obj).should(“have.property”, “nome”, “Tiago”);</code></p>
+<pre><code>  cy.get(“#login”).then($elemento =&gt; {
+      cy.wrap($elemento).type(“tiagolopes”);
+  })
+</code></pre><p>  <code>cy.wrap(10).should(“be.eql”, 10);</code></p>
+</li>
+<li><p><strong>its</strong> – Consegue navegar pelas propriedades de um objeto, capturando os valores de cada propriedade.</p>
+<p>  Exemplos:</p>
+<p>  <code>const obj = { nome: “Tiago”, membros: { pai: “Marcos” } };</code></p>
+<p>  <code>cy.wrap(obj).its(“nome”).should(“be.equal”, “Tiago”);</code></p>
+<p>  <code>cy.wrap(obj).its(“membros”).its(“pai”).should(“contain”, Marcos);</code></p>
+<p>  <code>cy.wrap(obj).its(“membros.pai”).should(“contain”, “Marcos”);</code></p>
+</li>
+<li><p><strong>invoke</strong> – Consegue invocar métodos de objetos, passando parâmetros e manipulando o valor retornado.</p>
+<p>  Exemplos:</p>
+<pre><code>  cy.get(“.success-alert”).invoke(“text”).then(text =&gt; {
+      expect(text).to.be.equal(“Cadastro finalizado!”);
+  })
+</code></pre><p>  <code>cy.get(“#inputName”).invoke(“val”, “Tiago Lopes”);</code></p>
+<p>  <code>cy.get(“#resultado”).invoke(“html”, “&lt;div&gt;Teste!&lt;/div&gt;”);</code></p>
+</li>
+<li><p><strong>on</strong> – Consegue manipular eventos do navegador.</p>
+<p>  Exemplos:</p>
+<p>  `cy.on(“window:alert”, mensagem =&gt; {</p>
+<pre><code>  expect(“mensagem”).contain(“Erro ao tentar salvar”);
+</code></pre><p>  })`</p>
+<p>  `cy.on(“window:confirm”, mensagem =&gt; {</p>
+<pre><code>  console.log(mensagem);
+</code></pre><p>  })`</p>
+</li>
+<li><p><strong>stub</strong> – Funciona como mock para simular serviços externos e elementos que o Cypress não consegue manipular. É possível criar um stub passando ou não parâmetros.</p>
+<p>  Exemplos:</p>
+<p>  <code>const stub = cy.stub();</code></p>
+<p>  <code>cy.on(“window:alert”, stub);</code></p>
+<pre><code>  cy.window().then(window =&gt; {
+      cy.stub(window, “prompt”).returns(“Valor qualquer”);
+  })
+</code></pre></li>
+<li><p><strong>window</strong> – Captura o objeto window da página, tendo acesso aos seus métodos e atributos.</p>
+<p>  Exemplos:</p>
+<p>  `cy.window().then(window =&gt; {</p>
+<pre><code>  cy.stub(window, “open”);
+</code></pre><p>  });`</p>
+<p>  <code>cy.window().invoke(‘alert’, “Exibindo alerta”);</code></p>
+</li>
+<li><p><strong>as</strong> – Possibilita dar um “alias” (apelido) a elementos para encurtar a chamada deles, por exemplo: rotas da API, elementos HTML com um Seletor muito grande e mocks.</p>
+<p>  Exemplos:</p>
+</li>
+</ul>
+<pre><code class="lang-js">    cy.get(“#form input[type=name]”).as(“name”);
+
+    cy.get(“@name”).type(“Tiago Lopes”);
+
+    cy.window().then(<span class="hljs-function"><span class="hljs-params">window</span> =&gt;</span> {
+        cy.stub(<span class="hljs-built_in">window</span>, “open”).as(“winOpen”);
+    });
+
+    cy.get(“@winOpen”).should(“be.called”);
+
+    cy.intercept(“GET”, “/users*”).as(“rotaUsuarios”);
+
+    cy.wait(“@rotaUsuarios”);
+</code></pre>
+<ul>
+<li><p><strong>fixture</strong> - Carrega um arquivo de Fixtures para usar como massa de teste ou mock de retorno de chamadas de APIs, por padrão, o Cypress irá buscar o arquivo dentro da pasta fixtures.</p>
+<p>  Exemplo:</p>
+</li>
+</ul>
+<pre><code class="lang-js">    cy.fixture(<span class="hljs-string">&apos;users&apos;</span>).then(<span class="hljs-function"><span class="hljs-params">user</span> =&gt;</span> {
+        cy.get(<span class="hljs-string">&apos;#name&apos;</span>).type(user.name);
+        cy.get(<span class="hljs-string">&apos;#age&apos;</span>).type(user.age);
+    })
+</code></pre>
+<ul>
+<li><p><strong>each</strong> - Quando o Cypress encontra vários elementos com o mesmo seletor, é possível iterá-los utilizando o método <strong>each</strong>.</p>
+<p>  Exemplo:</p>
+</li>
+</ul>
+<pre><code class="lang-js">    cy.get(<span class="hljs-string">&apos;#checkboxFood&apos;</span>).each($el =&gt; {
+        <span class="hljs-keyword">if</span> ($el.val() !== <span class="hljs-string">&apos;pizza&apos;</span>) {
+            cy.wrap($el).check();
+        }
+    })
+</code></pre>
+<ul>
+<li><p><strong>clock</strong> - Consegue alterar a data e hora do sistema, é possível passar uma data como parâmetro e o cypress irá alterar a data e hora do sistema para o valor passado por parêmetro.</p>
+<p>  Exemplos:</p>
+<p>  <code>cy.clock();</code></p>
+<pre><code>  dt = new Date(2021, 09, 07, 15, 23, 10);
+  cy.clock(dt);
+</code></pre></li>
+<li><p><strong>tick</strong> - Consegue avançar o tempo do sistema, recebe como parâmetro um número em milissegundos.</p>
+<p>  Exemplo:</p>
+<p>  <code>cy.tick(1500); // Avança um segundo e meio no tempo</code></p>
+</li>
+</ul>
+<h2 id="debug">Debug</h2>
+<ul>
+<li><p><strong>debug</strong> – Pausa a execução de teste naquele ponto que o debug foi adicionado e abre o navegador no modo de debug, exibindo informações no console do navegador.</p>
+<p>  Exemplo:</p>
+<p>  <code>cy.title().should(“contain”, “Início”).debug();</code></p>
+</li>
+<li><p><strong>pause</strong> – Simplesmente pausa a execução dos testes no ponto em que o pause foi adicionado, no painel do Cypress irá aparecer dois botões, um para continuar a execução dos testes até a próxima pausa e outro para executar o próximo comando.</p>
+</li>
+</ul>
+<h2 id="hooks">Hooks</h2>
+<p>Os hooks são utilizados para se executar determinados blocos de código antes ou depois de cada teste, um exemplo mais comum de utilização é para efetuar o login do usuário, se o login for um pré-requisito para o teste, então antes de cada teste deve ser feito o login, portanto esse comando pode ser colocado dentro de um bloco “beforeEach”.</p>
+<h3 id="tipos-de-hooks">Tipos de hooks</h3>
+<ul>
+<li><p><strong>before</strong> – Executa uma vez antes de todos os testes.</p>
+</li>
+<li><p><strong>after</strong> – Executa uma vez após todos os testes.</p>
+</li>
+<li><p><strong>beforeEach</strong> – Executa antes de cada teste, ou seja, se houver 8 testes, ele executará o bloco beforeEach 8 vezes, uma vez antes de cada teste.</p>
+</li>
+<li><p><strong>afterEach</strong> – Executa depois de cada teste, ou seja, se houver 8 testes, ele executará o bloco afterEach 8 vezes, uma após cada teste.</p>
+</li>
+<li><p><strong>describe</strong> – O bloco “describe” representa a suíte de testes, recebe uma string como parâmetro com a mensagem do que está sendo testado.</p>
+</li>
+<li><p><strong>it</strong> – O bloco “it” representa um teste, recebe uma string como parâmetro com a mensagem do que está sendo testado.</p>
+</li>
+</ul>
+<h2 id="comandos-customizáveis">Comandos Customizáveis</h2>
+<p>É possível adicionar comandos customizáveis no Cypress, ao adicionar o comando no arquivo Commands.js, ele se torna visível em todo o projeto de teste, é bem útil para evitar repetições de código.</p>
+<p>Sintaxe:</p>
+<pre><code class="lang-js">    Cypress.Commands.add(<span class="hljs-string">&apos;nomeDoComando&apos;</span>, <span class="hljs-function">(<span class="hljs-params">parametros</span>) =&gt;</span> {
+        <span class="hljs-comment">// implementação do comando</span>
+    })
+</code></pre>
+<p>Exemplo:</p>
+<pre><code class="lang-js">    Cypress.Commands.add(<span class="hljs-string">&apos;clickAlert&apos;</span>, <span class="hljs-function">(<span class="hljs-params">locator, message</span>) =&gt;</span> {
+        cy.get(locator).click()
+        cy.on(<span class="hljs-string">&apos;window:alert&apos;</span>, <span class="hljs-function"><span class="hljs-params">msg</span> =&gt;</span> {
+        expect(msg).to.be.equal(message)
+        })
+    })
+</code></pre>
+<p>Para invocar esse comando, basta chamar por <code>cy.clickAlert()</code> em qualquer arquivo de teste.</p>
+<h2 id="configurações-do-cypress">Configurações do Cypress</h2>
+<p>As configurações do Cypress podem ser feitas via linha de comando ou no arquivo cypress.json</p>
+<ul>
+<li><p><strong>SelectorPlayground</strong> – Essa configuração em específica, pode ser feita no arquivo index.js dentro da pasta support e serve para fazer alterações no funcionamento do SelectorPlayground (Ferramenta que consegue gerar um seletor do elemento HTML selecionado). Uma das alterações que podem ser feita, é alterar a ordem de prioridade dos seletores que ele busca, conforme o exemplo abaixo:</p>
+<p>  Exemplo:</p>
+<pre><code class="lang-js">  Cypress.SelectorPlayground.defaults({
+      selectorPriority: [
+          ‘id’,
+          ‘data-testid’,
+          ‘data-cy’
+          ‘class’,
+          ‘attributes’,
+          ‘tag’,
+          ‘nth-child’
+      ];
+  });
+</code></pre>
+</li>
+<li><p><strong>defaultCommandTimeout</strong> – Recebe um número. Valor em milissegundos da espera do Cypress pra encontrar algum elemento ou fazer uma asserção. O valor padrão é de 4000 milissegundos (4 segundos).</p>
+<p>  Exemplo:</p>
+<pre><code class="lang-js">  {
+      “defaultCommandTimeout” : <span class="hljs-number">6000</span>
+  }
+</code></pre>
+</li>
+</ul>
+<h2 id="plugins">Plugins</h2>
+<p>O Cypress possui muitas opções de plugins para aumentar as suas funcionalidades.</p>
+<ul>
+<li><p><strong>Cypress Xpath</strong> – Por padrão, o Cypress não aceita xpath nos seus comandos de busca, esse plugin traz o comando “xpath”, que possibilita que o Cypress localize elementos utilizando essa forma de busca.</p>
+<p>  Documentação oficial do plugin <a href="https://www.npmjs.com/package/cypress-xpath" target="_blank">cypress-xpath</a>.</p>
+<p>  Exemplos:</p>
+</li>
+</ul>
+<pre><code class="lang-js">    cy.xpath(“/html/body/div/h1”);
+
+    cy.xpath(“<span class="hljs-comment">//h1”);</span>
+
+    cy.xpath(“<span class="hljs-comment">//input[contains(@onclick, ’Francisco’)]”);</span>
+
+    cy.xpath(“<span class="hljs-comment">//input[@id=’name’]”).type(“Tiago Lopes”);</span>
+
+    cy.xpath(“<span class="hljs-comment">//table//td[contains(., ‘Valor’)]”);</span>
+
+    cy.xpath(“<span class="hljs-comment">//[contains(., “Tiago”)]/following-sibling::td”);</span>
+</code></pre>
+<pre><code>[Site](https://www.red-gate.com/simple-talk/development/dotnet-development/xpath-css-dom-and-selenium-the-rosetta-stone/) com exemplos de xpath.
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../../programacao/banco-de-dados/views_procedures_triggers.html" class="navigation navigation-prev " aria-label="Previous page: Banco de dados - Views, Procedures e Triggers">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../../financas/cursos/imersao-fiis/aula01-o-que-sao-fiis.html" class="navigation navigation-next " aria-label="Next page: Fundos imobiliários - O que são FIIs?">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Testes com Cypress","level":"2.9","depth":1,"next":{"title":"Fundos imobiliários - O que são FIIs?","level":"2.10","depth":1,"path":"content/financas/cursos/imersao-fiis/aula01-o-que-sao-fiis.md","ref":"content/financas/cursos/imersao-fiis/aula01-o-que-sao-fiis.md","articles":[]},"previous":{"title":"Banco de dados - Views, Procedures e Triggers","level":"2.8","depth":1,"path":"content/programacao/banco-de-dados/views_procedures_triggers.md","ref":"content/programacao/banco-de-dados/views_procedures_triggers.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"socialNetworks":{"medias":[{"name":"LinkedIn","url":"https://www.linkedin.com/in/tiago-lopes-7ab0b71a4","icon":"linkedin"},{"name":"Github","url":"https://github.com/Tiago0Br","icon":"github"}]}},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"content/testes/cypress/index.md","mtime":"2024-06-02T22:46:51.508Z","type":"markdown"},"gitbook":{"version":"3.6.20","time":"2024-06-02T22:47:04.993Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

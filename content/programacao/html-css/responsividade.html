@@ -1,0 +1,732 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML e CSS - Responsividade · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.6.20">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../php/Basico.html" />
+    
+    
+    <link rel="prev" href="flexbox.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Sobre</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    O Projeto
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Capítulos</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introdução
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="flexbox.html">
+            
+                <a href="flexbox.html">
+            
+                    
+                    HTML e CSS - Display flex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.3" data-path="responsividade.html">
+            
+                <a href="responsividade.html">
+            
+                    
+                    HTML e CSS - Responsividade
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../php/Basico.html">
+            
+                <a href="../php/Basico.html">
+            
+                    
+                    PHP - Básico
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../php/Strings.html">
+            
+                <a href="../php/Strings.html">
+            
+                    
+                    PHP - Strings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../banco-de-dados/">
+            
+                <a href="../banco-de-dados/">
+            
+                    
+                    Banco de Dados - Básico
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../banco-de-dados/normalizacao.html">
+            
+                <a href="../banco-de-dados/normalizacao.html">
+            
+                    
+                    Banco de Dados - Normalização
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="../banco-de-dados/views_procedures_triggers.html">
+            
+                <a href="../banco-de-dados/views_procedures_triggers.html">
+            
+                    
+                    Banco de dados - Views, Procedures e Triggers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="../../testes/cypress/">
+            
+                <a href="../../testes/cypress/">
+            
+                    
+                    Testes com Cypress
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="../../financas/cursos/imersao-fiis/aula01-o-que-sao-fiis.html">
+            
+                <a href="../../financas/cursos/imersao-fiis/aula01-o-que-sao-fiis.html">
+            
+                    
+                    Fundos imobiliários - O que são FIIs?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" data-path="../../financas/cursos/imersao-fiis/aula02-localizacao.html">
+            
+                <a href="../../financas/cursos/imersao-fiis/aula02-localizacao.html">
+            
+                    
+                    Fundos imobiliários - Localização e vacância
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    let buttonsWrapper = document.getElementById('sharing-buttons');
+    buttonsWrapper.querySelectorAll('button').forEach(button => {
+      button.addEventListener('click', function (event) {
+        let url = location.href;
+        let baseUrl = event.target.dataset.sharingBaseUrl
+          .replace(":url", url)
+          .replace(":text", buttonsWrapper.dataset.sharingText)
+        window.open(baseUrl);
+      })
+    })
+  })
+</script>
+
+
+
+<a class="btn pull-right" aria-label="" href="https://www.linkedin.com/in/tiago-lopes-7ab0b71a4" target="_blank">
+  <i class="fa fa-linkedin"></i>
+</a>
+
+
+
+
+<a class="btn pull-right" aria-label="" href="https://github.com/Tiago0Br" target="_blank">
+  <i class="fa fa-github"></i>
+</a>
+
+
+
+
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >HTML e CSS - Responsividade</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="responsividade-com-css">Responsividade com CSS</h1>
+<h2 id="imagens-responsivas">Imagens responsivas</h2>
+<p>A propriedade <strong>picture</strong> permite definir qual imagem dentro de um grupo de imagens será exibida em tela, dependendo de algum fator, como por exemplo o tamanho da tela.
+Dentro da tag <strong>picture</strong> é possível utilizar várias tags <strong>source</strong> definindo a imagem que deverá ser exibida e a condição em que ela deve ser exibida.
+No final pode ser utilizada uma tag <strong>img</strong> comum para definir uma imagem padrão.</p>
+<p>Exemplo:</p>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;pt-BR&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;UTF-8&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;viewport&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;width=device-width, initial-scale=1.0&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Imagens responsivas<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;styles.css&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Imagens responsivas<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;images&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">picture</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">source</span> <span class="hljs-attr">media</span>=<span class="hljs-string">&quot;(min-width: 850px)&quot;</span> <span class="hljs-attr">srcset</span>=<span class="hljs-string">&quot;images/img1.jpg&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">source</span> <span class="hljs-attr">media</span>=<span class="hljs-string">&quot;(min-width: 650px)&quot;</span> <span class="hljs-attr">srcset</span>=<span class="hljs-string">&quot;images/img2.jpg&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;images/img3.png&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Imagem de natureza&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">picture</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<h4 id="resultados">Resultados:</h4>
+<p>Resolução com tamanho inferior a 650px:
+![[img-small.png]]</p>
+<p>Resolução com tamanho igual ou superior a 650px e menor que 850px:
+![[img-medium.png]]</p>
+<p>Resolução igual ou maior que 850px:
+![[img-large.png]]</p>
+<h2 id="propriedade-object-fit">Propriedade object-fit</h2>
+<p>A propriedade <strong>object-fit</strong> permite ajustar uma imagem de acordo com o tamanho disponível para ela. Seus principais valores são:</p>
+<ul>
+<li><strong>fill</strong> (padrão): Ocupa todo o espaço disponível, mesmo que a imagem acabe ficando desproporcional e distorcida;</li>
+<li><strong>contain</strong>: Irá dimensionar a imagem de acordo com a largura disponível, porém mantendo a altura proporcional para que a imagem não fique distorcida;</li>
+<li><strong>cover</strong>: Irá cortar parte da imagem para ocupar todo o espaço disponível, mas para que a imagem não fique distorcida</li>
+</ul>
+<h2 id="media-queries">Media queries</h2>
+<p>A propriedade <strong>@media</strong> permite adicionar estilos quando uma determinada condição é atingida, geralmente relacionada ao tamanho da tela. Isso a torna uma propriedade muito útil para tornar páginas responsividade.</p>
+<h3 id="max-width-e-min-width">max-width e min-width</h3>
+<p>Exemplo:</p>
+<pre><code class="lang-css"><span class="hljs-selector-tag">h1</span> {
+    <span class="hljs-attribute">text-align</span>: center;
+}
+
+<span class="hljs-keyword">@media</span> screen <span class="hljs-keyword">and</span> (<span class="hljs-attribute">max-width</span>: <span class="hljs-number">600px</span>) {
+    <span class="hljs-selector-tag">h1</span> {
+        <span class="hljs-attribute">color</span>: white;
+    }
+
+    <span class="hljs-selector-tag">body</span> {
+        <span class="hljs-attribute">background-color</span>: black;
+    }
+}
+</code></pre>
+<p>Nesse exemplo, as alterações de cores no <strong>h1</strong> e no <strong>body</strong> são aplicadas somente quando o tamanho da tela for igual ou inferior a 600px.</p>
+<h3 id="only-print">only print</h3>
+<p>Quando é adicionada a condição <strong>only print</strong>, os estilos só são aplicados na impressão da página.</p>
+<p>Exemplo:</p>
+<pre><code class="lang-css"><span class="hljs-selector-tag">h1</span> {
+    <span class="hljs-attribute">text-align</span>: center;
+}
+
+<span class="hljs-keyword">@media</span> <span class="hljs-keyword">only</span> print {
+    <span class="hljs-selector-tag">body</span> {
+        <span class="hljs-attribute">background-color</span>: black;
+    }
+}
+</code></pre>
+<p>Nesse exemplo, o fundo fica na cor preta apenas na impressão da página.</p>
+<h3 id="orientation">orientation</h3>
+<p>Aplica os estilos de acordo com determinada orientação, <strong>landscape</strong> (paisagem) ou <strong>portrait</strong> (retrato).</p>
+<p>Exemplo:</p>
+<pre><code class="lang-css"><span class="hljs-selector-tag">h1</span> {
+    <span class="hljs-attribute">text-align</span>: center;
+}
+
+<span class="hljs-selector-class">.container</span> {
+    <span class="hljs-attribute">display</span>: flex;
+}
+
+<span class="hljs-selector-class">.box</span> {
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">100px</span>;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">100px</span>;
+    <span class="hljs-attribute">border</span>: <span class="hljs-number">2px</span> solid black;
+}
+
+<span class="hljs-keyword">@media</span> (<span class="hljs-attribute">orientation</span>: landscape) { <span class="hljs-comment">/* Aplica quando a orientação for paisagem */</span>
+    <span class="hljs-selector-class">.container</span> {
+        <span class="hljs-attribute">flex-direction</span>: row;
+    }
+}
+
+<span class="hljs-keyword">@media</span> (<span class="hljs-attribute">orientation</span>: portrait) { <span class="hljs-comment">/* Aplica quando a orientação for retrato */</span>
+    <span class="hljs-selector-class">.container</span> {
+        <span class="hljs-attribute">flex-direction</span>: column;
+    }
+}
+</code></pre>
+<h3 id="aspect-ratio">aspect-ratio</h3>
+<p>Aplica os estilos de acordo com a proporção da tela.
+<strong>Sintaxe</strong>: <code>@media (aspect-ratio: altura/largura)</code></p>
+<p>Exemplo:</p>
+<pre><code class="lang-css"><span class="hljs-selector-tag">h1</span> {
+    <span class="hljs-attribute">text-align</span>: center;
+}
+
+<span class="hljs-keyword">@media</span> (<span class="hljs-attribute">aspect-ratio</span>: <span class="hljs-number">16</span>/<span class="hljs-number">9</span>) {
+    <span class="hljs-selector-tag">body</span> {
+        <span class="hljs-attribute">background-color</span>: blueviolet;
+    }
+}
+
+<span class="hljs-keyword">@media</span> (<span class="hljs-attribute">aspect-ratio</span>: <span class="hljs-number">1</span>/<span class="hljs-number">1</span>) {
+    <span class="hljs-selector-tag">body</span> {
+        <span class="hljs-attribute">background-color</span>: cyan;
+    }
+}
+
+<span class="hljs-keyword">@media</span> (<span class="hljs-attribute">aspect-ratio</span>: <span class="hljs-number">1</span>/<span class="hljs-number">2</span>) {
+    <span class="hljs-selector-tag">body</span> {
+        <span class="hljs-attribute">background-color</span>: pink;
+    }
+}
+</code></pre>
+<h2 id="variáveis">Variáveis</h2>
+<p>Assim como em uma linguagem de programação, no CSS também é possível criar variáveis. Para se declarar uma variável no CSS, usa-se os caracteres <code>--</code> antes do nome da variável, exemplo <code>--bg-color</code>. </p>
+<p>A variável criada poderá ser acessada dentro do bloco onde ela foi declarada e também nos blocos correspondentes a elementos &quot;filhos&quot; do bloco do elemento onde a variável foi criada. Por conta disso, é bem comum declarar variáveis dentro do bloco <code>:root {}</code> para que sejam acessíveis em qualquer outro bloco.</p>
+<p>Para acessar o conteúdo de uma variável, é utilizada a função <code>var()</code> passando como parâmetro o nome da variável, por exemplo: <code>var(--bg-color)</code>.</p>
+<p>É possível passar qualquer conteúdo para variáveis, como cores, fontes, tamanhos, entre outros valores.</p>
+<p>Exemplo:</p>
+<pre><code class="lang-css"><span class="hljs-selector-pseudo">:root</span> {
+    --bg-<span class="hljs-attribute">color</span>: <span class="hljs-number">#000</span>;
+    --bg-secondary: <span class="hljs-number">#444</span>;
+    --<span class="hljs-attribute">font</span>-<span class="hljs-attribute">color</span>: <span class="hljs-built_in">rgb</span>(<span class="hljs-number">72</span>, <span class="hljs-number">72</span>, <span class="hljs-number">201</span>);
+    --<span class="hljs-attribute">font</span>-secondary: <span class="hljs-number">#fff</span>;
+}
+
+<span class="hljs-selector-tag">h1</span> {
+    <span class="hljs-attribute">text-align</span>: center;
+    <span class="hljs-attribute">color</span>: <span class="hljs-built_in">var</span>(--font-secondary);
+}
+
+<span class="hljs-selector-tag">body</span> {
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--bg-color);
+    <span class="hljs-attribute">color</span>: <span class="hljs-built_in">var</span>(--font-color);
+    <span class="hljs-attribute">font-family</span>: <span class="hljs-string">&apos;Courier New&apos;</span>, Courier, monospace;
+}
+</code></pre>
+<p>É possível passar mais de um parâmetro para a função <code>var()</code> para o caso de o primeiro parâmetro passado não seja uma variável existente, nesse caso a função irá aplicar o valor da próxima variável passada como parâmetro.</p>
+<p>Exemplo:</p>
+<pre><code class="lang-css"><span class="hljs-selector-pseudo">:root</span> {
+    --bg-<span class="hljs-attribute">color</span>: <span class="hljs-number">#000</span>;
+    --bg-secondary: <span class="hljs-number">#444</span>;
+    --<span class="hljs-attribute">font</span>-<span class="hljs-attribute">color</span>: <span class="hljs-built_in">rgb</span>(<span class="hljs-number">72</span>, <span class="hljs-number">72</span>, <span class="hljs-number">201</span>);
+    --<span class="hljs-attribute">font</span>-secondary: <span class="hljs-number">#fff</span>;
+}
+
+<span class="hljs-selector-tag">h2</span> {
+    <span class="hljs-attribute">text-align</span>: center;
+    <span class="hljs-attribute">color</span>: <span class="hljs-built_in">var</span>(--variavel-inexistente, <span class="hljs-number">#fff</span>);
+}
+</code></pre>
+<h3 id="uso-de-variáveis-em-media-queries">Uso de variáveis em media queries</h3>
+<p>Uma ótima utilidade para as variáveis são na criação de medias queries, por exemplo: em determinadas resoluções de telas, o valor de uma variável que armazena o tamanho de uma fonte poderá ser alterado e assim irá afetar todos os locais onde essa variável é utilizada de uma só vez.</p>
+<p>Exemplo:</p>
+<pre><code class="lang-css"><span class="hljs-selector-pseudo">:root</span> {
+    --bg-<span class="hljs-attribute">color</span>: <span class="hljs-built_in">rgb</span>(<span class="hljs-number">16</span>, <span class="hljs-number">16</span>, <span class="hljs-number">80</span>);
+    --<span class="hljs-attribute">font</span>-<span class="hljs-attribute">color</span>: <span class="hljs-number">#fff</span>;
+    --<span class="hljs-attribute">font-size</span>: <span class="hljs-number">18px</span>;
+    --<span class="hljs-attribute">font</span>-title: <span class="hljs-number">50px</span>;
+}
+
+<span class="hljs-selector-tag">h1</span><span class="hljs-selector-class">.title</span> {
+    <span class="hljs-attribute">text-align</span>: center;
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-built_in">var</span>(--font-title);
+    <span class="hljs-attribute">color</span>: <span class="hljs-built_in">var</span>(--font-color);
+}
+
+<span class="hljs-selector-tag">body</span> {
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--bg-color);
+    <span class="hljs-attribute">color</span>: <span class="hljs-built_in">var</span>(--font-color);
+    <span class="hljs-attribute">font-family</span>: <span class="hljs-string">&apos;Courier New&apos;</span>, Courier, monospace;
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-built_in">var</span>(--font-size);
+}
+
+<span class="hljs-comment">/* Modifica o valor das variáveis caso a resolução seja menor que 600px */</span>
+<span class="hljs-keyword">@media</span> screen <span class="hljs-keyword">and</span> (<span class="hljs-attribute">max-width</span>: <span class="hljs-number">600px</span>) {
+    <span class="hljs-selector-pseudo">:root</span> {
+        --<span class="hljs-attribute">font</span>-title: <span class="hljs-number">25px</span>;
+        --<span class="hljs-attribute">font-size</span>: <span class="hljs-number">12px</span>;
+    }
+}
+</code></pre>
+<h2 id="estratégia-para-deixar-altura-relativa-à-largura">Estratégia para deixar altura relativa à largura</h2>
+<p>Uma forma para se deixar um elemento, como imagem ou vídeo, com altura sempre relativa à largura é que esse elemento seja formado por 3 tags aninhadas. Abaixo foi utilizado um iframe de vídeo como exemplo:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;video&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;video-area&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">iframe</span> 
+            <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://www.youtube.com/embed/wy_fSStEg&quot;</span>
+            <span class="hljs-attr">frameborder</span>=<span class="hljs-string">&quot;0&quot;</span> 
+            <span class="hljs-attr">allowfullscreen</span>
+        &gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">iframe</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+<p>Na estilização do elemento, na primeira <code>div</code> deve ser informada à largura que o vídeo ou elemento em questão deve possuir.</p>
+<p>Exemplo:</p>
+<pre><code class="lang-css"><span class="hljs-selector-class">.video</span> {
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">60%</span>;
+}
+
+<span class="hljs-selector-class">.video-area</span> {
+    <span class="hljs-attribute">position</span>: relative;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">56.25%</span>;
+}
+
+<span class="hljs-selector-class">.video-area</span> <span class="hljs-selector-tag">iframe</span> {
+    <span class="hljs-attribute">position</span>: absolute;
+    <span class="hljs-attribute">top</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">bottom</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+    <span class="hljs-attribute">border</span>: <span class="hljs-number">0px</span>;
+}
+</code></pre>
+<h3 id="min-max">Min-max</h3>
+<p>A função <code>max</code> compara dois valores e aplica o maior valor, já a função <code>min</code> faz o inverso. São funções bem úteis para realizar uma comparação entre duas medidas relativas, ou uma medida fixa com uma medida relativa.</p>
+<p>Exemplo:</p>
+<pre><code class="lang-css"><span class="hljs-selector-class">.image</span> {
+    <span class="hljs-attribute">width</span>: <span class="hljs-built_in">max</span>(<span class="hljs-number">60%</span>, <span class="hljs-number">500px</span>);
+}
+
+<span class="hljs-selector-class">.image-area</span> {
+    <span class="hljs-attribute">position</span>: relative;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">56.25%</span>;
+}
+
+<span class="hljs-selector-class">.image-area</span> <span class="hljs-selector-tag">img</span> {
+    <span class="hljs-attribute">position</span>: absolute;
+    <span class="hljs-attribute">top</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">bottom</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+    <span class="hljs-attribute">border</span>: <span class="hljs-number">0px</span>;
+}
+</code></pre>
+<h3 id="calc">Calc</h3>
+<p>A função <code>calc()</code> permite realizar cálculos entre medidas relativas e medidas fixas.</p>
+<p>Exemplo:</p>
+<pre><code class="lang-css"><span class="hljs-selector-class">.image</span> {
+    <span class="hljs-attribute">width</span>: <span class="hljs-built_in">calc</span>(<span class="hljs-number">60%</span> - <span class="hljs-number">100px</span>);
+}
+
+<span class="hljs-selector-class">.image-area</span> {
+    <span class="hljs-attribute">position</span>: relative;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">56.25%</span>;
+}
+
+<span class="hljs-selector-class">.image-area</span> <span class="hljs-selector-tag">img</span> {
+    <span class="hljs-attribute">position</span>: absolute;
+    <span class="hljs-attribute">top</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">bottom</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+    <span class="hljs-attribute">border</span>: <span class="hljs-number">0px</span>;
+}
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="flexbox.html" class="navigation navigation-prev " aria-label="Previous page: HTML e CSS - Display flex">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../php/Basico.html" class="navigation navigation-next " aria-label="Next page: PHP - Básico">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"HTML e CSS - Responsividade","level":"2.3","depth":1,"next":{"title":"PHP - Básico","level":"2.4","depth":1,"path":"content/programacao/php/Basico.md","ref":"content/programacao/php/Basico.md","articles":[]},"previous":{"title":"HTML e CSS - Display flex","level":"2.2","depth":1,"path":"content/programacao/html-css/flexbox.md","ref":"content/programacao/html-css/flexbox.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"socialNetworks":{"medias":[{"name":"LinkedIn","url":"https://www.linkedin.com/in/tiago-lopes-7ab0b71a4","icon":"linkedin"},{"name":"Github","url":"https://github.com/Tiago0Br","icon":"github"}]}},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"content/programacao/html-css/responsividade.md","mtime":"2024-06-02T22:46:51.500Z","type":"markdown"},"gitbook":{"version":"3.6.20","time":"2024-06-02T22:47:04.993Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

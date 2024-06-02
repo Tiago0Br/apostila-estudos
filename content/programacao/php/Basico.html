@@ -1,0 +1,872 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <title>PHP - Básico · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.6.20">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Strings.html" />
+    
+    
+    <link rel="prev" href="../html-css/responsividade.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Sobre</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    O Projeto
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Capítulos</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introdução
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../html-css/flexbox.html">
+            
+                <a href="../html-css/flexbox.html">
+            
+                    
+                    HTML e CSS - Display flex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../html-css/responsividade.html">
+            
+                <a href="../html-css/responsividade.html">
+            
+                    
+                    HTML e CSS - Responsividade
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.4" data-path="Basico.html">
+            
+                <a href="Basico.html">
+            
+                    
+                    PHP - Básico
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="Strings.html">
+            
+                <a href="Strings.html">
+            
+                    
+                    PHP - Strings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../banco-de-dados/">
+            
+                <a href="../banco-de-dados/">
+            
+                    
+                    Banco de Dados - Básico
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../banco-de-dados/normalizacao.html">
+            
+                <a href="../banco-de-dados/normalizacao.html">
+            
+                    
+                    Banco de Dados - Normalização
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="../banco-de-dados/views_procedures_triggers.html">
+            
+                <a href="../banco-de-dados/views_procedures_triggers.html">
+            
+                    
+                    Banco de dados - Views, Procedures e Triggers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="../../testes/cypress/">
+            
+                <a href="../../testes/cypress/">
+            
+                    
+                    Testes com Cypress
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="../../financas/cursos/imersao-fiis/aula01-o-que-sao-fiis.html">
+            
+                <a href="../../financas/cursos/imersao-fiis/aula01-o-que-sao-fiis.html">
+            
+                    
+                    Fundos imobiliários - O que são FIIs?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" data-path="../../financas/cursos/imersao-fiis/aula02-localizacao.html">
+            
+                <a href="../../financas/cursos/imersao-fiis/aula02-localizacao.html">
+            
+                    
+                    Fundos imobiliários - Localização e vacância
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    let buttonsWrapper = document.getElementById('sharing-buttons');
+    buttonsWrapper.querySelectorAll('button').forEach(button => {
+      button.addEventListener('click', function (event) {
+        let url = location.href;
+        let baseUrl = event.target.dataset.sharingBaseUrl
+          .replace(":url", url)
+          .replace(":text", buttonsWrapper.dataset.sharingText)
+        window.open(baseUrl);
+      })
+    })
+  })
+</script>
+
+
+
+<a class="btn pull-right" aria-label="" href="https://www.linkedin.com/in/tiago-lopes-7ab0b71a4" target="_blank">
+  <i class="fa fa-linkedin"></i>
+</a>
+
+
+
+
+<a class="btn pull-right" aria-label="" href="https://github.com/Tiago0Br" target="_blank">
+  <i class="fa fa-github"></i>
+</a>
+
+
+
+
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >PHP - Básico</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="comandos-básicos">Comandos básicos</h1>
+<h3 id="echo">echo</h3>
+<p>O comando <strong>echo</strong> exibe um texto no console ou em tela (dependendo de onde o código está sendo executado). Exemplo:</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">hello</span>(<span class="hljs-params"><span class="hljs-keyword">string</span> <span class="hljs-variable">$name</span>, <span class="hljs-keyword">int</span> <span class="hljs-variable">$age</span></span>): <span class="hljs-title">void</span>  
+</span>{  
+    <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;Olá, meu nome é <span class="hljs-subst">$name</span>, eu tenho <span class="hljs-subst">$age</span> anos.&quot;</span> . PHP_EOL;  
+}
+</code></pre>
+<h3 id="vardump">var_dump</h3>
+<p>O comando <strong>var_dump</strong> exibe o conteúdo de variáveis de forma bem detalhada especificando o tipo da variável. Se for um array associativo exibe o tipo de cada chave do array. Exemplo:</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-variable">$people</span> = [  
+    [<span class="hljs-string">&quot;nome&quot;</span> =&gt; <span class="hljs-string">&quot;Tiago Lopes&quot;</span>,  
+        <span class="hljs-string">&quot;idade&quot;</span> =&gt; <span class="hljs-number">21</span>,  
+        <span class="hljs-string">&quot;trabalha&quot;</span> =&gt; <span class="hljs-literal">true</span>  
+    ],   
+    [  
+        <span class="hljs-string">&quot;nome&quot;</span> =&gt; <span class="hljs-string">&quot;Gisele Lopes&quot;</span>,  
+        <span class="hljs-string">&quot;idade&quot;</span> =&gt; <span class="hljs-number">25</span>,  
+        <span class="hljs-string">&quot;trabalha&quot;</span> =&gt; <span class="hljs-literal">true</span>  
+    ],  
+];
+
+var_dump(<span class="hljs-variable">$people</span>);
+</code></pre>
+<p>Saída:</p>
+<pre><code>array(2) {
+  [0]=&gt;
+  array(3) {
+    [&quot;nome&quot;]=&gt;
+    string(11) &quot;Tiago Lopes&quot;
+    [&quot;idade&quot;]=&gt;
+    int(21)
+    [&quot;trabalha&quot;]=&gt;
+    bool(true)
+  }
+  [1]=&gt;
+  array(3) {
+    [&quot;nome&quot;]=&gt;
+    string(12) &quot;Gisele Lopes&quot;
+    [&quot;idade&quot;]=&gt;
+    int(25)
+    [&quot;trabalha&quot;]=&gt;
+    bool(true)
+  }
+}
+</code></pre><h1 id="tipos-de-variáveis">Tipos de variáveis</h1>
+<h3 id="tipos-primitivos">Tipos primitivos</h3>
+<p>O PHP é uma linguagem com tipagem dinâmica e forte. Possui os seguintes tipos primitivos:</p>
+<ul>
+<li><strong>int</strong>: Números inteiros;</li>
+<li><strong>float</strong>: Números com vírgula;</li>
+<li><strong>string</strong>: Texto;</li>
+<li><strong>bool</strong>: true (verdadeiro) ou false (falso);</li>
+<li><strong>mixed</strong>: É quanto o tipo de uma variável não foi inferido, então pode ser qualquer tipo (funciona como o &quot;any&quot; do Typescript).</li>
+</ul>
+<p>Exemplo:</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>  
+
+<span class="hljs-variable">$age</span> = <span class="hljs-number">22</span>; <span class="hljs-comment">// int  </span>
+<span class="hljs-variable">$name</span> = <span class="hljs-string">&apos;Tiago&apos;</span>; <span class="hljs-comment">// string  </span>
+<span class="hljs-variable">$weight</span> = <span class="hljs-number">75.20</span>; <span class="hljs-comment">// float  </span>
+<span class="hljs-variable">$married</span> = <span class="hljs-literal">false</span>; <span class="hljs-comment">// bool  </span>
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">hello</span>(<span class="hljs-params"><span class="hljs-keyword">string</span> <span class="hljs-variable">$name</span>, <span class="hljs-keyword">int</span> <span class="hljs-variable">$age</span>, <span class="hljs-keyword">float</span> <span class="hljs-variable">$weight</span>, <span class="hljs-keyword">bool</span> <span class="hljs-variable">$married</span></span>): <span class="hljs-title">void</span>  
+</span>{  
+    <span class="hljs-variable">$isMarried</span> = <span class="hljs-variable">$married</span> ? <span class="hljs-string">&apos;sou casado.&apos;</span> : <span class="hljs-string">&apos;não sou casado.&apos;</span>;  
+    <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;Olá, meu nome é <span class="hljs-subst">$name</span>, eu tenho <span class="hljs-subst">$age</span> anos, peso <span class="hljs-subst">$weight</span> KG e <span class="hljs-subst">$isMarried</span>&quot;</span> . PHP_EOL;  
+}  
+
+hello(<span class="hljs-variable">$name</span>, <span class="hljs-variable">$age</span>, <span class="hljs-variable">$weight</span>, <span class="hljs-variable">$married</span>);
+</code></pre>
+<p>Saída:</p>
+<pre><code>Olá, meu nome é Tiago, eu tenho 22 anos, peso 75.2 KG e não sou casado.
+</code></pre><h3 id="variáveis-e-constantes">Variáveis e constantes</h3>
+<p>No PHP podemos ter variáveis cujo o valor pode variar e aquelas cujo o valor não muda (constante). Na declaração de uma variável, é necessário utilizar o caractere $ antes do nome da variável. No caso da constante, é utilizada a palavra reservada &quot;const&quot; e o caractere $ não precisa ser utilizado no nome da constante.</p>
+<p>Exemplo:</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-keyword">const</span> name = <span class="hljs-string">&apos;Tiago Lopes&apos;</span>;  
+<span class="hljs-variable">$age</span> = <span class="hljs-number">22</span>;
+
+<span class="hljs-keyword">echo</span> <span class="hljs-string">&apos;Name: &apos;</span> . name . PHP_EOL;
+<span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;Age: <span class="hljs-subst">$age</span>&quot;</span> . PHP_EOL;
+</code></pre>
+<p>Também é possível declarar constantes utilizando o comando &quot;define&quot;.</p>
+<p>Exemplo:</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+define(<span class="hljs-string">&apos;name&apos;</span>, <span class="hljs-string">&apos;Tiago Lopes&apos;</span>);
+<span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;Name: &quot;</span> . name;
+</code></pre>
+<h3 id="arrays">Arrays</h3>
+<p>No PHP temos 2 tipos de arrays: com <strong>índices numéricos</strong> (como listas simples) e <strong>associativos</strong> (com chave e valor, conhecidos como &quot;objetos&quot; em outras linguagens, como o Javascript, por exemplo).</p>
+<p>Exemplo:</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-variable">$names</span> = [<span class="hljs-string">&quot;Tiago&quot;</span>, <span class="hljs-string">&quot;Gisele&quot;</span>, <span class="hljs-string">&quot;Jéssica&quot;</span>, <span class="hljs-string">&quot;Pedro&quot;</span>]; <span class="hljs-comment">// Array com índices numéricos </span>
+
+<span class="hljs-variable">$person</span> = [  <span class="hljs-comment">// Array associativo</span>
+    <span class="hljs-string">&quot;nome&quot;</span> =&gt; <span class="hljs-string">&quot;Gisele Lopes&quot;</span>,  
+    <span class="hljs-string">&quot;idade&quot;</span> =&gt; <span class="hljs-number">25</span>,  
+    <span class="hljs-string">&quot;trabalha&quot;</span> =&gt; <span class="hljs-literal">false</span>  
+];
+</code></pre>
+<h1 id="condicionais">Condicionais</h1>
+<h3 id="if">if</h3>
+<p>O <strong>if</strong> verifica se uma determinada condição retorna verdadeiro, se sim, o código dentro do bloco é executado. Exemplo:</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>  
+
+<span class="hljs-variable">$number</span> = rand(<span class="hljs-number">1</span>, <span class="hljs-number">10</span>);  
+
+<span class="hljs-keyword">if</span> (<span class="hljs-variable">$number</span> &gt; <span class="hljs-number">5</span>) {  
+    <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;<span class="hljs-subst">$number</span> é maior que 5&quot;</span>;  
+}
+</code></pre>
+<h3 id="else">else</h3>
+<p>O <strong>else</strong> permite executar um bloco de código caso a condição do <strong>if</strong> não seja atendida. Exemplo:</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>  
+
+<span class="hljs-variable">$number</span> = rand(<span class="hljs-number">1</span>, <span class="hljs-number">10</span>);  
+
+<span class="hljs-keyword">if</span> (<span class="hljs-variable">$number</span> &gt; <span class="hljs-number">5</span>) {  
+    <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;<span class="hljs-subst">$number</span> é maior que 5&quot;</span>;  
+} <span class="hljs-keyword">else</span> {  
+    <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;<span class="hljs-subst">$number</span> é menor ou igual a 5&quot;</span>;  
+}
+</code></pre>
+<h3 id="elseif">elseif</h3>
+<p>O <strong>elseif</strong> permite adicionar outras condições após um <strong>if</strong>. Exemplo:</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>  
+
+<span class="hljs-variable">$number</span> = rand(<span class="hljs-number">1</span>, <span class="hljs-number">30</span>);  
+
+<span class="hljs-keyword">if</span> (<span class="hljs-variable">$number</span> &gt; <span class="hljs-number">20</span>) {  
+    <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;<span class="hljs-subst">$number</span> é maior que 20&quot;</span>;  
+} <span class="hljs-keyword">elseif</span> (<span class="hljs-variable">$number</span> &gt; <span class="hljs-number">10</span>) {  
+    <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;<span class="hljs-subst">$number</span> é maior que 10 e menor que 20&quot;</span>;  
+} <span class="hljs-keyword">else</span> {  
+    <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;<span class="hljs-subst">$number</span> é menor que 10&quot;</span>;  
+}
+</code></pre>
+<h3 id="operador-ternário">Operador ternário</h3>
+<p>O operador ternário permite verificar se uma condição for verdadeira e realizar uma ação, caso seja verdadeira, e uma outra ação, se for falsa. Exemplo:</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>  
+
+<span class="hljs-variable">$number</span> = rand(<span class="hljs-number">1</span>, <span class="hljs-number">10</span>);  
+
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$number</span> &gt; <span class="hljs-number">5</span> ? <span class="hljs-string">&quot;<span class="hljs-subst">$number</span> é maior que 5&quot;</span> : <span class="hljs-string">&quot;<span class="hljs-subst">$number</span> é menor ou igual a 5&quot;</span>
+</code></pre>
+<h3 id="coalesce">Coalesce</h3>
+<p>É semelhante ao operador ternário. Verifica se o primeiro valor passado é um valor que é considerado falso (false, 0, null), se não for, retorna o primeiro valor, caso contrário, retorna o segundo valor. Exemplo:</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>  
+
+<span class="hljs-variable">$number</span> = rand(<span class="hljs-number">1</span>, <span class="hljs-number">10</span>);  
+<span class="hljs-variable">$valor</span> = <span class="hljs-literal">null</span>;  
+
+<span class="hljs-keyword">if</span> (<span class="hljs-variable">$number</span> &gt; <span class="hljs-number">5</span>) <span class="hljs-variable">$valor</span> = <span class="hljs-variable">$number</span>;  
+
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$valor</span> ?? <span class="hljs-string">&apos;O valor é nulo&apos;</span>;
+</code></pre>
+<h3 id="switch">switch</h3>
+<p>Compara o valor de uma variável com uma série de casos definidos, caso o valor seja correspondente em algum dos casos, o código desse bloco é executado, caso contrário é executado o caso do bloco &apos;default&apos;, caso este seja definido. Exemplo:</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-variable">$number</span> = rand(<span class="hljs-number">1</span>, <span class="hljs-number">4</span>);  
+<span class="hljs-variable">$options</span> = [<span class="hljs-string">&apos;A&apos;</span>, <span class="hljs-string">&apos;B&apos;</span>, <span class="hljs-string">&apos;C&apos;</span>, <span class="hljs-string">&apos;D&apos;</span>];  
+<span class="hljs-variable">$option</span> = <span class="hljs-variable">$options</span>[<span class="hljs-variable">$number</span>-<span class="hljs-number">1</span>];  
+
+<span class="hljs-keyword">switch</span> (<span class="hljs-variable">$option</span>) {  
+    <span class="hljs-keyword">case</span> <span class="hljs-string">&apos;A&apos;</span>:  
+        <span class="hljs-keyword">echo</span> <span class="hljs-string">&apos;A opção sorteada foi A&apos;</span>;  
+        <span class="hljs-keyword">break</span>;  
+    <span class="hljs-keyword">case</span> <span class="hljs-string">&apos;B&apos;</span>:  
+        <span class="hljs-keyword">echo</span> <span class="hljs-string">&apos;A opção sorteada foi B&apos;</span>;  
+        <span class="hljs-keyword">break</span>;  
+    <span class="hljs-keyword">case</span> <span class="hljs-string">&apos;C&apos;</span>:  
+        <span class="hljs-keyword">echo</span> <span class="hljs-string">&apos;A opção sorteada foi C&apos;</span>;  
+        <span class="hljs-keyword">break</span>;  
+    <span class="hljs-keyword">case</span> <span class="hljs-string">&apos;D&apos;</span>:  
+        <span class="hljs-keyword">echo</span> <span class="hljs-string">&apos;A opção sorteada foi D&apos;</span>;  
+        <span class="hljs-keyword">break</span>;  
+    <span class="hljs-keyword">default</span>:  
+        <span class="hljs-keyword">echo</span> <span class="hljs-string">&apos;Ocorreu um erro!&apos;</span>;  
+}
+</code></pre>
+<p>O comando <strong>break</strong> faz com que o programa saia do bloco <strong>switch</strong> assim que um dos casos for atendido.</p>
+<h3 id="match">match</h3>
+<p>Semelhante ao switch temos o comando match, que verifica se o valor de uma variável bate com uma série de valores definidos dentro do bloco, possuindo uma sintaxe mais enxuta que o switch. Exemplo:</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-variable">$number</span> = rand(<span class="hljs-number">1</span>, <span class="hljs-number">4</span>);  
+<span class="hljs-variable">$options</span> = [<span class="hljs-string">&apos;A&apos;</span>, <span class="hljs-string">&apos;B&apos;</span>, <span class="hljs-string">&apos;C&apos;</span>, <span class="hljs-string">&apos;D&apos;</span>];  
+<span class="hljs-variable">$option</span> = <span class="hljs-variable">$options</span>[<span class="hljs-variable">$number</span>-<span class="hljs-number">1</span>];  
+
+<span class="hljs-keyword">echo</span> <span class="hljs-keyword">match</span> (<span class="hljs-variable">$option</span>) {  
+    <span class="hljs-string">&apos;A&apos;</span> =&gt; <span class="hljs-string">&apos;A opção sorteada foi A&apos;</span>,  
+    <span class="hljs-string">&apos;B&apos;</span> =&gt; <span class="hljs-string">&apos;A opção sorteada foi B&apos;</span>,  
+    <span class="hljs-string">&apos;C&apos;</span> =&gt; <span class="hljs-string">&apos;A opção sorteada foi C&apos;</span>,  
+    <span class="hljs-string">&apos;D&apos;</span> =&gt; <span class="hljs-string">&apos;A opção sorteada foi D&apos;</span>,  
+    <span class="hljs-keyword">default</span> =&gt; <span class="hljs-string">&apos;Ocorreu um erro!&apos;</span>,  
+};
+</code></pre>
+<h3 id="while">while</h3>
+<p>Executa um bloco de código repetidamente enquanto uma condição for verdadeira, saindo do bloco somente quando a condição passa a ser falsa. Exemplo:</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-keyword">int</span> <span class="hljs-variable">$number</span> = <span class="hljs-number">0</span>;  
+
+<span class="hljs-keyword">while</span> (<span class="hljs-variable">$number</span> &lt; <span class="hljs-number">8</span>) {  
+    <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;O número <span class="hljs-subst">$number</span> é menor que 8&quot;</span> . PHP_EOL;  
+
+    <span class="hljs-variable">$number</span> = rand(<span class="hljs-number">1</span>, <span class="hljs-number">10</span>);  
+}
+</code></pre>
+<h3 id="do-while">do while</h3>
+<p>Executa o bloco pelo menos uma vez, após a primeira execução só continuará no bloco caso a condição definida no final do bloco seja verdadeira, saindo quando a condição passar a ser falsa.</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-variable">$number</span>;  
+
+<span class="hljs-keyword">do</span> {  
+    <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;Passou pelo bloco&quot;</span> . PHP_EOL;  
+
+    <span class="hljs-variable">$number</span> = rand(<span class="hljs-number">1</span>, <span class="hljs-number">10</span>);  
+} <span class="hljs-keyword">while</span> (<span class="hljs-variable">$number</span> &lt; <span class="hljs-number">8</span>);
+</code></pre>
+<h3 id="for">For</h3>
+<p>Executa um bloco de código uma quantidade pré-determinada de vezes. Exemplo:</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-variable">$number</span> = rand(<span class="hljs-number">1</span>, <span class="hljs-number">30</span>);
+
+<span class="hljs-keyword">for</span> (<span class="hljs-variable">$i</span> = <span class="hljs-number">1</span>; <span class="hljs-variable">$i</span> &lt;= <span class="hljs-variable">$number</span>; <span class="hljs-variable">$i</span>++) {  
+    <span class="hljs-keyword">echo</span> <span class="hljs-variable">$i</span> . PHP_EOL;  
+}
+</code></pre>
+<h1 id="operadores">Operadores</h1>
+<p>O PHP possui operadores aritméticos, para realização de cálculos, relacionais para comparações e lógicos para operações lógicas.</p>
+<h3 id="operadores-aritméticos">Operadores aritméticos</h3>
+<p>Os principais operadores aritméticos são:</p>
+<ul>
+<li><ul>
+<li>(Soma)</li>
+</ul>
+</li>
+<li><ul>
+<li>(Subtração)</li>
+</ul>
+</li>
+<li>/ (Divisão)</li>
+<li><ul>
+<li>(Multiplicação)</li>
+</ul>
+</li>
+<li>% (Resto da divisão)</li>
+<li>** (Potenciação)</li>
+<li>. (Concatenação)</li>
+</ul>
+<p>Exemplo:</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>  
+
+<span class="hljs-variable">$firstNumber</span> = <span class="hljs-number">5</span>;  
+<span class="hljs-variable">$secondNumber</span> = <span class="hljs-number">3</span>;  
+
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$secondNumber</span> + <span class="hljs-variable">$firstNumber</span> . PHP_EOL;  
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$firstNumber</span> - <span class="hljs-variable">$secondNumber</span> . PHP_EOL;  
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$firstNumber</span> * <span class="hljs-variable">$secondNumber</span> . PHP_EOL;  
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$firstNumber</span> / <span class="hljs-variable">$secondNumber</span> . PHP_EOL;  
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$firstNumber</span> % <span class="hljs-variable">$secondNumber</span> . PHP_EOL;  
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$firstNumber</span> ** <span class="hljs-variable">$secondNumber</span> . PHP_EOL;  
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$firstNumber</span> . <span class="hljs-variable">$secondNumber</span> . PHP_EOL;
+
+<span class="hljs-comment">/* Resultado:
+
+8
+2
+15
+1.6666666666667
+2
+125
+53
+*/</span>
+</code></pre>
+<h3 id="operadores-relacionais">Operadores relacionais</h3>
+<p>Os operadores relacionais do PHP são:</p>
+<ul>
+<li>&gt; (Maior)</li>
+<li>&gt;= (Maior ou igual)</li>
+<li>&lt; (Menor)</li>
+<li>&lt;= (Menor ou igual)</li>
+<li>== (Igual a)</li>
+<li>=== (Estritamente igual. Verifica se o tipo de ambos os valores também é o mesmo)</li>
+<li>&lt;=&gt; (Maior, igual ou menor. Retorna 1 se o primeiro valor for maior, -1 se o segundo valor for maior e 0 caso ambos sejam iguais)</li>
+</ul>
+<p>Exemplo:</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>  
+
+<span class="hljs-variable">$firstNumber</span> = <span class="hljs-number">5</span>;  
+<span class="hljs-variable">$secondNumber</span> = <span class="hljs-number">3</span>;  
+<span class="hljs-variable">$thirdNumber</span> = <span class="hljs-string">&apos;5&apos;</span>;  
+
+<span class="hljs-keyword">echo</span> (<span class="hljs-variable">$firstNumber</span> &gt; <span class="hljs-variable">$secondNumber</span> ? <span class="hljs-string">&apos;Verdadeiro&apos;</span> : <span class="hljs-string">&apos;Falso&apos;</span>) . PHP_EOL;  
+<span class="hljs-keyword">echo</span> (<span class="hljs-variable">$firstNumber</span> &gt;= <span class="hljs-variable">$secondNumber</span> ? <span class="hljs-string">&apos;Verdadeiro&apos;</span> : <span class="hljs-string">&apos;Falso&apos;</span>) . PHP_EOL;  
+<span class="hljs-keyword">echo</span> (<span class="hljs-variable">$firstNumber</span> &lt; <span class="hljs-variable">$secondNumber</span> ? <span class="hljs-string">&apos;Verdadeiro&apos;</span> : <span class="hljs-string">&apos;Falso&apos;</span>) . PHP_EOL;  
+<span class="hljs-keyword">echo</span> (<span class="hljs-variable">$firstNumber</span> &lt;= <span class="hljs-variable">$secondNumber</span> ? <span class="hljs-string">&apos;Verdadeiro&apos;</span> : <span class="hljs-string">&apos;Falso&apos;</span>) . PHP_EOL;  
+<span class="hljs-keyword">echo</span> (<span class="hljs-variable">$firstNumber</span> == <span class="hljs-variable">$thirdNumber</span> ? <span class="hljs-string">&apos;Verdadeiro&apos;</span> : <span class="hljs-string">&apos;Falso&apos;</span>) . PHP_EOL;  
+<span class="hljs-keyword">echo</span> (<span class="hljs-variable">$firstNumber</span> === <span class="hljs-variable">$thirdNumber</span> ? <span class="hljs-string">&apos;Verdadeiro&apos;</span> : <span class="hljs-string">&apos;Falso&apos;</span>) . PHP_EOL;  
+<span class="hljs-keyword">echo</span> (<span class="hljs-variable">$secondNumber</span> &lt;=&gt; <span class="hljs-variable">$firstNumber</span>) . PHP_EOL;
+
+<span class="hljs-comment">/*
+Resultado:
+
+Verdadeiro
+Verdadeiro
+Falso
+Falso
+Verdadeiro
+Falso
+-1
+*/</span>
+</code></pre>
+<h3 id="operadores-lógicos">Operadores lógicos</h3>
+<p>Os operadores lógicos do PHP são:</p>
+<ul>
+<li>&amp;&amp; (E): Todas as asserções devem ser verdadeiras para que o resultado final seja verdadeiro;</li>
+<li>|| (Ou): Basta uma das asserções ser verdadeira para que o resultado final seja verdadeiro;</li>
+<li>! (Não): Nega o resultado, ou seja: se o resultado for verdeiro, será invertido para falso e o inverso também;</li>
+<li>^ (Ou exclusivo): Apenas uma das asserções deve ser verdadeira para que o resultado final seja verdadeiro, caso mais de uma seja verdadeira ou nenhuma seja, o resultado será falso.</li>
+</ul>
+<p>Exemplo:</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>  
+
+<span class="hljs-variable">$firstNumber</span> = <span class="hljs-number">5</span>;  
+<span class="hljs-variable">$secondNumber</span> = <span class="hljs-number">10</span>;  
+<span class="hljs-variable">$thirdNumber</span> = <span class="hljs-number">3</span>;  
+
+<span class="hljs-keyword">if</span> (<span class="hljs-variable">$firstNumber</span> &lt; <span class="hljs-variable">$secondNumber</span> &amp;&amp; <span class="hljs-variable">$firstNumber</span> &gt; <span class="hljs-variable">$thirdNumber</span>) {  
+    <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;<span class="hljs-subst">$firstNumber</span> é menor que <span class="hljs-subst">$secondNumber</span> E maior que <span class="hljs-subst">$thirdNumber</span>.&quot;</span> . PHP_EOL;  
+}  
+
+<span class="hljs-keyword">if</span> (<span class="hljs-variable">$firstNumber</span> &lt; <span class="hljs-variable">$secondNumber</span> || <span class="hljs-variable">$firstNumber</span> &lt; <span class="hljs-variable">$thirdNumber</span>) {  
+    <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;<span class="hljs-subst">$firstNumber</span> é menor que <span class="hljs-subst">$secondNumber</span> OU que <span class="hljs-subst">$thirdNumber</span>.&quot;</span> . PHP_EOL;  
+}  
+
+<span class="hljs-keyword">if</span> (!(<span class="hljs-variable">$firstNumber</span> &gt; <span class="hljs-variable">$secondNumber</span>)) {  
+    <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;<span class="hljs-subst">$firstNumber</span> NÃO é maior que <span class="hljs-subst">$secondNumber</span>.&quot;</span> . PHP_EOL;  
+}  
+
+<span class="hljs-keyword">if</span> (<span class="hljs-variable">$firstNumber</span> &lt; <span class="hljs-variable">$secondNumber</span> ^ <span class="hljs-variable">$firstNumber</span> &gt; <span class="hljs-variable">$thirdNumber</span>) {  
+    <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;<span class="hljs-subst">$firstNumber</span> é SOMENTE menor que <span class="hljs-subst">$secondNumber</span> OU SOMENTE maior que <span class="hljs-subst">$thirdNumber</span>.&quot;</span> . PHP_EOL;  
+}
+
+<span class="hljs-comment">/*
+Resultado:
+
+5 é menor que 10 E maior que 3.
+5 é menor que 10 OU que 3.
+5 NÃO é maior que 10.
+*/</span>
+</code></pre>
+<h1 id="funções">Funções</h1>
+<p>Funções são blocos de código que podem ou não retornar um valor e podem receber parâmetros, realizando diferentes comportamentos de acordo com os parâmetros recebidos e são uma ótima forma de eliminar repetições de códigos.</p>
+<p>No PHP, existem duas formas de se declarar funções, da maneira <strong>convencional</strong> ou por meio de <strong>Arrow functions</strong>.</p>
+<ul>
+<li><strong>Funções convencionais</strong>: São declaradas com a palavra chave <strong>function</strong> seguido pelo nome da função, abertura de parênteses, onde podem ser recebidos parâmetros de diferentes tipos. Em versões do PHP superiores a 7.4 deve ser especificado o tipo de cada parâmetro e o tipo do retorno da função. Exemplo:</li>
+</ul>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sum</span>(<span class="hljs-params"><span class="hljs-keyword">int</span> <span class="hljs-variable">$firstNumber</span>, <span class="hljs-keyword">int</span> <span class="hljs-variable">$secondNumber</span></span>): <span class="hljs-title">int</span>  
+</span>{  
+    <span class="hljs-keyword">return</span> <span class="hljs-variable">$firstNumber</span> + <span class="hljs-variable">$secondNumber</span>;
+}
+
+<span class="hljs-keyword">echo</span> sum(<span class="hljs-number">10</span>, <span class="hljs-number">5</span>); <span class="hljs-comment">// Resultado 15</span>
+</code></pre>
+<ul>
+<li><strong>Arrow function</strong>: São declaradas como variáveis, portanto precisam do caractere <strong>$</strong> antes do nome da função,  possuem uma sintaxe mais simples e objetiva e possuem um retorno implícito através do operador <strong>=&gt;</strong>. Exemplo:</li>
+</ul>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-variable">$sum</span> = <span class="hljs-function"><span class="hljs-keyword">fn</span>(<span class="hljs-params"><span class="hljs-keyword">int</span> <span class="hljs-variable">$firstNumber</span>, <span class="hljs-keyword">int</span> <span class="hljs-variable">$secondNumber</span></span>): <span class="hljs-title">int</span> =&gt;</span> 
+    <span class="hljs-variable">$firstNumber</span> + <span class="hljs-variable">$secondNumber</span>;
+
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$sum</span>(<span class="hljs-number">10</span>, <span class="hljs-number">5</span>); <span class="hljs-comment">// Resultado 15</span>
+</code></pre>
+<h1 id="importação-de-arquivos">Importação de arquivos</h1>
+<p>Arquivos PHP podem ser importados em outros arquivos através dos comandos <strong>require</strong> e <strong>require_once</strong>.</p>
+<ul>
+<li><strong>require</strong>: Faz a importação de um arquivo PHP, deve ser passado o caminho relativo desse arquivo partindo da pasta do arquivo que está fazendo essa importação.</li>
+<li><strong>require_once</strong>: Também realiza importação assim como o <strong>require</strong>, a única diferença entre eles é que o <strong>require_once</strong> verifica se o arquivo já está sendo importado, para não correr o risco de ele ser importado mais de uma vez, já o <strong>require</strong> não faz essa verificação.</li>
+</ul>
+<p>Exemplo:</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>  
+
+<span class="hljs-keyword">require</span> <span class="hljs-string">&apos;strings.php&apos;</span>;  
+<span class="hljs-keyword">require_once</span> <span class="hljs-string">&apos;funcoes.php&apos;</span>;
+
+<span class="hljs-variable">$person</span> = [  
+    <span class="hljs-string">&quot;nome&quot;</span> =&gt; <span class="hljs-string">&quot;Matheus Cunha&quot;</span>,  
+    <span class="hljs-string">&quot;idade&quot;</span> =&gt; <span class="hljs-number">32</span>,  
+    <span class="hljs-string">&quot;trabalha&quot;</span> =&gt; <span class="hljs-literal">false</span>  
+];  
+
+<span class="hljs-keyword">echo</span> hello(<span class="hljs-variable">$person</span>); <span class="hljs-comment">// Método que vem de um arquivo importado</span>
+</code></pre>
+<p>Quando é feita a importação de uma classe e esta possui um <strong>namespace</strong>, a importação pode ser feita utilizando o comando <strong>use</strong>. Nesse caso, o <strong>autoload</strong> deve estar corretamente configurado para a importação funcionar corretamente.</p>
+<p>Exemplo:</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>  
+
+<span class="hljs-keyword">require_once</span> <span class="hljs-string">&apos;autoload.php&apos;</span>;  
+
+<span class="hljs-keyword">use</span> <span class="hljs-title">model</span>\{<span class="hljs-title">Endereco</span>};  
+<span class="hljs-keyword">use</span> <span class="hljs-title">model</span>\<span class="hljs-title">funcionario</span>\{<span class="hljs-title">Gerente</span>, <span class="hljs-title">Diretor</span>, <span class="hljs-title">Desenvolvedor</span>};  
+<span class="hljs-keyword">use</span> <span class="hljs-title">service</span>\<span class="hljs-title">ControleDeBonificacoes</span>;
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../html-css/responsividade.html" class="navigation navigation-prev " aria-label="Previous page: HTML e CSS - Responsividade">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Strings.html" class="navigation navigation-next " aria-label="Next page: PHP - Strings">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"PHP - Básico","level":"2.4","depth":1,"next":{"title":"PHP - Strings","level":"2.5","depth":1,"path":"content/programacao/php/Strings.md","ref":"content/programacao/php/Strings.md","articles":[]},"previous":{"title":"HTML e CSS - Responsividade","level":"2.3","depth":1,"path":"content/programacao/html-css/responsividade.md","ref":"content/programacao/html-css/responsividade.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"socialNetworks":{"medias":[{"name":"LinkedIn","url":"https://www.linkedin.com/in/tiago-lopes-7ab0b71a4","icon":"linkedin"},{"name":"Github","url":"https://github.com/Tiago0Br","icon":"github"}]}},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"content/programacao/php/Basico.md","mtime":"2024-06-02T22:46:51.504Z","type":"markdown"},"gitbook":{"version":"3.6.20","time":"2024-06-02T22:47:04.993Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

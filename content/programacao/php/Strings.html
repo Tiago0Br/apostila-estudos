@@ -1,0 +1,581 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <title>PHP - Strings · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.6.20">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../banco-de-dados/" />
+    
+    
+    <link rel="prev" href="Basico.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Sobre</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    O Projeto
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Capítulos</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introdução
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../html-css/flexbox.html">
+            
+                <a href="../html-css/flexbox.html">
+            
+                    
+                    HTML e CSS - Display flex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../html-css/responsividade.html">
+            
+                <a href="../html-css/responsividade.html">
+            
+                    
+                    HTML e CSS - Responsividade
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="Basico.html">
+            
+                <a href="Basico.html">
+            
+                    
+                    PHP - Básico
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.5" data-path="Strings.html">
+            
+                <a href="Strings.html">
+            
+                    
+                    PHP - Strings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../banco-de-dados/">
+            
+                <a href="../banco-de-dados/">
+            
+                    
+                    Banco de Dados - Básico
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../banco-de-dados/normalizacao.html">
+            
+                <a href="../banco-de-dados/normalizacao.html">
+            
+                    
+                    Banco de Dados - Normalização
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="../banco-de-dados/views_procedures_triggers.html">
+            
+                <a href="../banco-de-dados/views_procedures_triggers.html">
+            
+                    
+                    Banco de dados - Views, Procedures e Triggers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="../../testes/cypress/">
+            
+                <a href="../../testes/cypress/">
+            
+                    
+                    Testes com Cypress
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="../../financas/cursos/imersao-fiis/aula01-o-que-sao-fiis.html">
+            
+                <a href="../../financas/cursos/imersao-fiis/aula01-o-que-sao-fiis.html">
+            
+                    
+                    Fundos imobiliários - O que são FIIs?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" data-path="../../financas/cursos/imersao-fiis/aula02-localizacao.html">
+            
+                <a href="../../financas/cursos/imersao-fiis/aula02-localizacao.html">
+            
+                    
+                    Fundos imobiliários - Localização e vacância
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    let buttonsWrapper = document.getElementById('sharing-buttons');
+    buttonsWrapper.querySelectorAll('button').forEach(button => {
+      button.addEventListener('click', function (event) {
+        let url = location.href;
+        let baseUrl = event.target.dataset.sharingBaseUrl
+          .replace(":url", url)
+          .replace(":text", buttonsWrapper.dataset.sharingText)
+        window.open(baseUrl);
+      })
+    })
+  })
+</script>
+
+
+
+<a class="btn pull-right" aria-label="" href="https://www.linkedin.com/in/tiago-lopes-7ab0b71a4" target="_blank">
+  <i class="fa fa-linkedin"></i>
+</a>
+
+
+
+
+<a class="btn pull-right" aria-label="" href="https://github.com/Tiago0Br" target="_blank">
+  <i class="fa fa-github"></i>
+</a>
+
+
+
+
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >PHP - Strings</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="tamanho-de-strings">Tamanho de strings</h1>
+<h3 id="strlen">strlen</h3>
+<p>O comando <strong>strlen</strong> retorna o tamanho de uma string, considerando acentuação como caracteres. Exemplo:</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>  
+
+<span class="hljs-variable">$name</span> = <span class="hljs-string">&apos;Tiagão&apos;</span>;  
+
+<span class="hljs-keyword">echo</span> strlen(<span class="hljs-variable">$name</span>) . PHP_EOL; <span class="hljs-comment">// Resultado: 7</span>
+</code></pre>
+<h3 id="mbstrlen">mb_strlen</h3>
+<p>O comando <strong>mb_strlen</strong> faz parte do módulo <strong>mbstring</strong> e também retorna o tamanho de uma string, porém desconsiderando as acentuações e outros caracteres especiais. Exemplo:</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>  
+
+<span class="hljs-variable">$name</span> = <span class="hljs-string">&apos;Tiagão&apos;</span>;  
+
+<span class="hljs-keyword">echo</span> mb_strlen(<span class="hljs-variable">$name</span>) . PHP_EOL; <span class="hljs-comment">// Resultado: 6</span>
+</code></pre>
+<h1 id="verificar-se-a-string-contém-um-certo-conteúdo">Verificar se a string contém um certo conteúdo</h1>
+<h3 id="strcontains">str_contains</h3>
+<p>Verifica se contém um certo conteúdo dentro de uma string retornando verdadeiro, caso contenha e falso, caso não contenha, exemplo:</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>  
+
+<span class="hljs-variable">$name</span> = <span class="hljs-string">&apos;Tiago Tavares Lopes&apos;</span>;  
+
+<span class="hljs-keyword">if</span> (str_contains(<span class="hljs-variable">$name</span>, <span class="hljs-string">&apos;Lopes&apos;</span>)) {
+    <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;<span class="hljs-subst">$name</span> contém &apos;Lopes&apos;&quot;</span> . PHP_EOL;  
+}
+
+<span class="hljs-comment">// Resultado:</span>
+<span class="hljs-comment">// Tiago Tavares Lopes contém &apos;Lopes&apos;</span>
+</code></pre>
+<h3 id="strstartswith">str_starts_with</h3>
+<p>Verifica se uma string se inicia com um determinado conteúdo, retornando verdadeiro ou falso, por exemplo:</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>  
+
+<span class="hljs-variable">$name</span> = <span class="hljs-string">&apos;Tiago Tavares Lopes&apos;</span>;  
+
+
+<span class="hljs-keyword">if</span> (str_starts_with(<span class="hljs-variable">$name</span>, <span class="hljs-string">&apos;Tiago&apos;</span>)) {
+    <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;<span class="hljs-subst">$name</span> começa com &apos;Tiago&apos;&quot;</span> . PHP_EOL;  
+}
+
+<span class="hljs-comment">// Resultado:</span>
+<span class="hljs-comment">// Tiago Tavares Lopes começa com &apos;Tiago&apos;</span>
+</code></pre>
+<h3 id="strendswith">str_ends_with</h3>
+<p>Verifica se uma string termina com um determinado conteúdo, retornando verdadeiro ou falso, por exemplo:</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>  
+
+<span class="hljs-variable">$name</span> = <span class="hljs-string">&apos;Tiago Tavares Lopes&apos;</span>;
+
+<span class="hljs-keyword">if</span> (str_ends_with(<span class="hljs-variable">$name</span>, <span class="hljs-string">&apos;Lopes&apos;</span>)) {
+    <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;<span class="hljs-subst">$name</span> termina com &apos;Lopes&apos;&quot;</span> . PHP_EOL;  
+}
+
+<span class="hljs-comment">// Resultado:</span>
+<span class="hljs-comment">// Tiago Tavares Lopes termina com &apos;Lopes&apos;</span>
+</code></pre>
+<h1 id="manipulação-de-strings">Manipulação de Strings</h1>
+<h3 id="strtoupper">strtoupper</h3>
+<p>Transforma a string deixando todos os caracteres em caixa alta (com exceção de caracteres acentuados). Exemplo:</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>  
+
+<span class="hljs-variable">$name</span> = <span class="hljs-string">&apos;Tiagão Lopes&apos;</span>;  
+
+<span class="hljs-keyword">echo</span> strtoupper(<span class="hljs-variable">$name</span>) . PHP_EOL;
+
+<span class="hljs-comment">// Resultado: TIAGãO LOPES</span>
+</code></pre>
+<h3 id="mbstrtoupper">mb_strtoupper</h3>
+<p>Realiza a mesma função da <strong>strtoupper</strong>, porém também deixa em caixa alta os caracteres acentuados. Faz parte da extensão <a href="https://www.php.net/manual/pt_BR/book.mbstring.php" target="_blank">mbstring</a>. Exemplo:</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>  
+
+<span class="hljs-variable">$name</span> = <span class="hljs-string">&apos;Tiagão Lopes&apos;</span>;  
+
+<span class="hljs-keyword">echo</span> mb_strtoupper(<span class="hljs-variable">$name</span>) . PHP_EOL;
+
+<span class="hljs-comment">// Resultado: TIAGÃO LOPES</span>
+</code></pre>
+<h3 id="strtolower">strtolower</h3>
+<p>Transforma a string deixando todos os caracteres em caixa baixa (com exceção de caracteres acentuados). Exemplo:</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>  
+
+<span class="hljs-variable">$name</span> = <span class="hljs-string">&apos;TIAGÃO LOPES&apos;</span>;  
+
+<span class="hljs-keyword">echo</span> strtolower(<span class="hljs-variable">$name</span>) . PHP_EOL;
+
+<span class="hljs-comment">// Resultado: tiagÃo lopes</span>
+</code></pre>
+<h3 id="mbstrtolower">mb_strtolower</h3>
+<p>Realiza a mesma função da <strong>strtolower</strong>, porém também deixa em caixa baixa os caracteres acentuados. Faz parte da extensão <a href="https://www.php.net/manual/pt_BR/book.mbstring.php" target="_blank">mbstring</a>. Exemplo:</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>  
+
+<span class="hljs-variable">$name</span> = <span class="hljs-string">&apos;TIAGÃO LOPES&apos;</span>;  
+
+<span class="hljs-keyword">echo</span> mb_strtolower(<span class="hljs-variable">$name</span>) . PHP_EOL;
+
+<span class="hljs-comment">// Resultado: tiagão lopes</span>
+</code></pre>
+<h3 id="explode">explode</h3>
+<p>Transforma a string em um array de strings com base em um separador. Exemplo:</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>  
+
+<span class="hljs-variable">$name</span> = <span class="hljs-string">&apos;Tiago Lopes&apos;</span>;  
+
+[<span class="hljs-variable">$firstName</span>, <span class="hljs-variable">$lastName</span>] = explode(<span class="hljs-string">&apos; &apos;</span>, <span class="hljs-variable">$name</span>);
+<span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;Meu nome é <span class="hljs-subst">$firstName</span> e meu sobrenome é <span class="hljs-subst">$lastName</span>&quot;</span> . PHP_EOL;
+
+<span class="hljs-comment">// Saída: Meu nome é Tiago e meu sobrenome é Lopes</span>
+</code></pre>
+<h3 id="implode">implode</h3>
+<p>Faz o inverso do comando <strong>explode</strong>, transforma um array em uma string, cada item separado por um separador definido na chamada da função. Exemplo:</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-variable">$students</span> = [<span class="hljs-string">&apos;Tiago&apos;</span>, <span class="hljs-string">&apos;Gisele&apos;</span>, <span class="hljs-string">&apos;Jéssica&apos;</span>];  
+<span class="hljs-variable">$strStudents</span> = implode(<span class="hljs-string">&apos;, &apos;</span>, <span class="hljs-variable">$students</span>);
+<span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;Os alunos são: <span class="hljs-subst">$strStudents</span>.&quot;</span> . PHP_EOL;
+
+<span class="hljs-comment">// Saída: Os alunos são: Tiago, Gisele, Jéssica.</span>
+</code></pre>
+<h3 id="trim">trim</h3>
+<p>Remove espaços em branco do início e fim de uma string e também pode remover outros caracteres definidos na chamada da função. Exemplo:</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-variable">$email</span> = <span class="hljs-string">&apos;  ,  teste@gmail.com  ,./  &apos;</span>;  
+<span class="hljs-keyword">echo</span> trim(<span class="hljs-variable">$email</span>) . PHP_EOL; <span class="hljs-comment">// Remove somente espaços em brancos</span>
+<span class="hljs-keyword">echo</span> trim(<span class="hljs-variable">$email</span>, <span class="hljs-string">&apos; ,./&apos;</span>) . PHP_EOL; <span class="hljs-comment">// Remove outros caracteres</span>
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Basico.html" class="navigation navigation-prev " aria-label="Previous page: PHP - Básico">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../banco-de-dados/" class="navigation navigation-next " aria-label="Next page: Banco de Dados - Básico">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"PHP - Strings","level":"2.5","depth":1,"next":{"title":"Banco de Dados - Básico","level":"2.6","depth":1,"path":"content/programacao/banco-de-dados/index.md","ref":"content/programacao/banco-de-dados/index.md","articles":[]},"previous":{"title":"PHP - Básico","level":"2.4","depth":1,"path":"content/programacao/php/Basico.md","ref":"content/programacao/php/Basico.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"socialNetworks":{"medias":[{"name":"LinkedIn","url":"https://www.linkedin.com/in/tiago-lopes-7ab0b71a4","icon":"linkedin"},{"name":"Github","url":"https://github.com/Tiago0Br","icon":"github"}]}},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"content/programacao/php/Strings.md","mtime":"2024-06-02T22:46:51.504Z","type":"markdown"},"gitbook":{"version":"3.6.20","time":"2024-06-02T22:47:04.993Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
