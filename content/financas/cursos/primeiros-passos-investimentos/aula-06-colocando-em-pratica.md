@@ -2,7 +2,7 @@
 
 ### Método Smart
 
-![[metodo-smart.png]]
+![Método Smart](metodo-smart.png)
 
 **Teste das anti-metas: Realizar 3 perguntas sobre as metas definidas:**
 1. Qual é o pior resultado possível para essa meta?
