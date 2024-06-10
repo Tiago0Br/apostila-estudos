@@ -32,7 +32,7 @@ Exemplo com `flex-direction: row`:
 ```
 
 Resultado:
-![[flex-row.png]]
+![Flex row](imagens/flex-row.png)
 
 Exemplo com `flex-direction: column:
 ```css
@@ -56,4 +56,4 @@ Exemplo com `flex-direction: column:
 ```
 
 Resultado:
-![[flex-col.png]]
+![Flex col](imagens/flex-col.png)

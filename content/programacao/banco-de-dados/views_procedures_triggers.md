@@ -1,8 +1,8 @@
 Lista de comandos SQL aprendidos na disciplina de Banco de dados.
 
 ##  Lista de Conteúdos
-[SELECT](index.md)<br />
-[NORMALIZAÇÃO](./normalizacao.md)<br />
+[SELECT](index.md)
+[NORMALIZAÇÃO](./normalizacao.md)
 **VIEWS, TRIGGERS E PROCEDURES**
 
 ## Lista de Comandos
@@ -13,7 +13,8 @@ Lista de comandos SQL aprendidos na disciplina de Banco de dados.
 
 #### CREATE FUNCTION
 
-Comando para criação de funções, estas podem ou não receber parâmetros e retornam algum conteúdo.<br/>
+Comando para criação de funções, estas podem ou não receber parâmetros e retornam algum conteúdo.
+
 **Exemplos:**
 ```sql
 CREATE FUNCTION hello_world() -- Criação de função sem parâmetros

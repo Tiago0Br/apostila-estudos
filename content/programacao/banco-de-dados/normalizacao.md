@@ -1,6 +1,6 @@
 ##  Lista de Conteúdos
-[SELECT](index.md)<br />
-**NORMALIZAÇÃO**<br />
+[SELECT](index.md)
+**NORMALIZAÇÃO**
 [VIEWS, TRIGGERS E PROCEDURES](./views_procedures_triggers.md)
 
 ---
@@ -12,25 +12,27 @@ FORMAS NORMAIS
 </summary>
 
 &emsp;&emsp;[1ª FORMA NORMAL](#1ª-forma-normal)</br>
-&emsp;&emsp;[2ª FORMA NORMAL](#2ª-forma-normal)</br>
-&emsp;&emsp;[3ª FORMA NORMAL](#3ª-forma-normal)</br>
+[2ª FORMA NORMAL](#2ª-forma-normal)
+[3ª FORMA NORMAL](#3ª-forma-normal)
 
-</details>
 Normalização é um processo de modelagem do banco de dados projetando a forma como as informações serão armazenadas a fim de eliminar, ou pelo menos minimizar, a redundância e a ambiguidade de informações no banco de dados.
 
 ---
 
 ### 1ª Forma normal
 
-Quando todos os atributos contêm apenas um valor correspondente, singular e não existem grupos com mais de um valor ou repetições.<br />
+Quando todos os atributos contêm apenas um valor correspondente, singular e não existem grupos com mais de um valor ou repetições.
 **Exemplo:**
 
-Clientes
-|Código|Nome|Endereco|Fone |
-|--|--|--|--|
-|10 |Diogo |Rua A, 10 |1111-1111 |
-|20 |Fábio |Rua B, 25 |2222-2222<br/> 3333-3333 |
-|30 |Ana |Rua C, 32 / Atpo 15 |4444-4444 |
+
+**Clientes**
+
+| Código | Nome  | Endereco            | Fone                |
+| ------ | ----- | ------------------- | ------------------- |
+| 10     | Diogo | Rua A, 10           | 1111-1111           |
+| 20     | Fábio | Rua B, 25           | 2222-2222 3333-3333 |
+| 30     | Ana   | Rua C, 21 / Apto 15 | 4444-4444           |
+
 
 Nessa tabela é possível visualizar que os clientes podem ter mais de um telefone, porém na 1ª forma normal os campos não podem ter mais de um valor, então realizando a normalização, a tabela é dividida em duas:
 

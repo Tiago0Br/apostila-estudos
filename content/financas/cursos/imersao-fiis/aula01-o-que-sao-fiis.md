@@ -37,4 +37,4 @@ Para pagar esse imposto, é necessário entrar no site da Receita Federal e emit
 
 É possível abater o valor do imposto caso tenha tido um prejuízo com uma venda anterior à venda que gerou o lucro, por exemplo: caso tenha sido comprado um número de cotas pelo valor de R$ 500,00 e vendido por R$ 400,00 o cotista ficou com um prejuízo de R$ 100,00. Caso posteriormente haja uma venda que gere um lucro, o valor do prejuízo pode ser subtraído ao valor do lucro, diminuindo assim o imposto a ser pago.
 
-![[como-ganhar-dinheiro-com-fiis.png]]
+![FIIs](imagens/como-ganhar-dinheiro-com-fiis.png)

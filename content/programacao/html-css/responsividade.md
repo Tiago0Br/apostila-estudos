@@ -33,13 +33,13 @@ Exemplo:
 #### Resultados:
 
 Resolução com tamanho inferior a 650px:
-![[img-small.png]]
+![Img Small](imagens/img-small.png)
 
 Resolução com tamanho igual ou superior a 650px e menor que 850px:
-![[img-medium.png]]
+![Img Medium](imagens/img-medium.png)
 
 Resolução igual ou maior que 850px:
-![[img-large.png]]
+![Img Large](imagens/img-large.png)
 
 ## Propriedade object-fit
 
