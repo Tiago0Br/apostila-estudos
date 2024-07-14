@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "a5c081144a873039",
+        "id": "9170e4664527668b",
         "type": "tabs",
         "children": [
           {
-            "id": "246de0c8a5ebf3c3",
+            "id": "2b751de1ab675f7c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "normalizacao.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -69,7 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 217.5
   },
   "right": {
     "id": "77e6a2f8e166c6cb",
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "normalizacao.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "normalizacao.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "normalizacao.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -146,8 +138,9 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "246de0c8a5ebf3c3",
+  "active": "2b751de1ab675f7c",
   "lastOpenFiles": [
+    "normalizacao.md",
     "views_procedures_triggers.md"
   ]
 }
