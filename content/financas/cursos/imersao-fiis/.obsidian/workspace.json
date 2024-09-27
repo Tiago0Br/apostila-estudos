@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "60c3596793bf7109",
+        "id": "39c7f72352ecc85b",
         "type": "tabs",
         "children": [
           {
-            "id": "872fee0d288d0a99",
+            "id": "a955cf4595cc2aff",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "aula02-localizacao.md",
+                "file": "analise-de-fiis-na-pratica.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "aula02-localizacao.md",
+                "file": "analise-de-fiis-na-pratica.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "aula02-localizacao.md",
+                "file": "analise-de-fiis-na-pratica.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "aula02-localizacao.md"
+                "file": "analise-de-fiis-na-pratica.md"
               }
             }
           }
@@ -147,21 +147,30 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "872fee0d288d0a99",
+  "active": "a955cf4595cc2aff",
   "lastOpenFiles": [
-    "imagens/preco-pedido-e-vacancia.png",
-    "imagens/vacancia-logistica-30km-sao-paulo.png",
-    "imagens/vacancia-logistica.png",
-    "imagens/vacancia-fisica-sao-paulo.png",
-    "imagens/dinamica-preco-sao-paulo.png",
-    "imagens/vacancia-media.png",
-    "imagens/vacancia-sao-paulo.png",
-    "imagens/fisica_x_financeira.png",
-    "imagens/vacancia-relatorio-gerencial.png",
-    "imagens/vacancia.png",
-    "aula02-localizacao.md",
-    "aula01-o-que-sao-fiis.md",
-    "imagens/como-ganhar-dinheiro-com-fiis.png",
+    "aula03/aula-03-aspectos-financeiros-e-tecnicos.md",
+    "analise-de-fiis-na-pratica.md",
+    "aula04/aula04-fiis-de-cris-e-fofs.md",
+    "aula02/aula02-localizacao.md",
+    "aula01/aula01-o-que-sao-fiis.md",
+    "aula04",
+    "aula02",
+    "aula01",
+    "Sem título.canvas",
+    "imagens/Pasted image 20240905181414.png",
+    "imagens/Pasted image 20240905180739.png",
+    "imagens/Pasted image 20240905174420.png",
+    "imagens/Pasted image 20240905173525.png",
+    "imagens/Pasted image 20240905171247.png",
+    "imagens/Pasted image 20240904204511.png",
+    "imagens/Pasted image 20240904204201.png",
+    "imagens/Pasted image 20240904181900.png",
+    "imagens/Pasted image 20240904181647.png",
+    "imagens/Pasted image 20240904181347.png",
+    "aula03/imagens",
+    "aula03",
+    "aula04-fiis-de-cris-e-fofs",
     "imagens"
   ]
 }

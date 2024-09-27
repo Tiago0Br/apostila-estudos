@@ -1,22 +1,18 @@
 {
   "main": {
-    "id": "cfea2aecef884e37",
+    "id": "1f757c6bd7fe4a58",
     "type": "split",
     "children": [
       {
-        "id": "5e24e9bb2f973b15",
+        "id": "5c77b1f8b5296a87",
         "type": "tabs",
         "children": [
           {
-            "id": "a84efb4cab3fdb02",
+            "id": "a878c4c6b5eb2c53",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Arrays.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -25,15 +21,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "c5b7d4cc1f3e218f",
+    "id": "ef9164c1b3c35e2b",
     "type": "split",
     "children": [
       {
-        "id": "9d2061ce7f116e61",
+        "id": "70775a67a1643309",
         "type": "tabs",
         "children": [
           {
-            "id": "6a4d381a02023c50",
+            "id": "1b942c648ebc4428",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -43,7 +39,7 @@
             }
           },
           {
-            "id": "aa1ad3dc3bab42fb",
+            "id": "523cc65070a3aa38",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -58,7 +54,7 @@
             }
           },
           {
-            "id": "471d311b84cd3e14",
+            "id": "89e746f34014bd28",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -69,23 +65,22 @@
       }
     ],
     "direction": "horizontal",
-    "width": 225.5
+    "width": 300
   },
   "right": {
-    "id": "88280ebd307b8d3a",
+    "id": "f491f1ec981a2954",
     "type": "split",
     "children": [
       {
-        "id": "cfa016cebccb723f",
+        "id": "757160f54624f949",
         "type": "tabs",
         "children": [
           {
-            "id": "be26501389689e8f",
+            "id": "8df707a8fcfaca08",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Arrays.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,19 +92,18 @@
             }
           },
           {
-            "id": "019a26016b1bede0",
+            "id": "0facf0f555702ae1",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Arrays.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "34ec2ecdce181d45",
+            "id": "896615e608950d5f",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -120,13 +114,11 @@
             }
           },
           {
-            "id": "217a98133b864400",
+            "id": "d230478731616356",
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Arrays.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -146,21 +138,10 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "a84efb4cab3fdb02",
+  "active": "a878c4c6b5eb2c53",
   "lastOpenFiles": [
-    "Basico.md",
-    "Arrays.md",
-    "POO.md",
-    "PDO.md",
-    "Doctrine-orm.md",
-    "programacao-funcional.md",
-    "Tratamento-de-erros.md",
-    "Strings.md",
-    "Composer.md",
-    "_sumario.md",
-    "Sem título.canvas",
-    "Manipulando-arquivos.md",
-    "Sem título",
-    "imagens"
+    "aula-03.md",
+    "aula-02-acoes.md",
+    "aula-01-fundos-imobiliarios.md"
   ]
 }
