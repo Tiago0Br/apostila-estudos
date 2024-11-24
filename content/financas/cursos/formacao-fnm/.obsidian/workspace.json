@@ -1,24 +1,24 @@
 {
   "main": {
-    "id": "2234b1ea8c894c28",
+    "id": "a68e753c4665f826",
     "type": "split",
     "children": [
       {
-        "id": "39c7f72352ecc85b",
+        "id": "8cdd460dcc1c1ee2",
         "type": "tabs",
         "children": [
           {
-            "id": "a955cf4595cc2aff",
+            "id": "6d5c6657e7f6b5b9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "analise-de-fiis-na-pratica.md",
+                "file": "Modulo1/quais-produtos-nao-vender.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "analise-de-fiis-na-pratica"
+              "title": "quais-produtos-nao-vender"
             }
           }
         ]
@@ -27,15 +27,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "ecfe1fb5977ee7fa",
+    "id": "db4b5f4f2afaafb6",
     "type": "split",
     "children": [
       {
-        "id": "d563d1fc8be49cb7",
+        "id": "283e7e3f271af0c6",
         "type": "tabs",
         "children": [
           {
-            "id": "bab238b51a12962b",
+            "id": "67a5b29dafcbe723",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -47,7 +47,7 @@
             }
           },
           {
-            "id": "603b9575485f4891",
+            "id": "6faa82514edd00af",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -64,7 +64,7 @@
             }
           },
           {
-            "id": "082ac693e46d8f51",
+            "id": "3e741d3d2717dc15",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -77,23 +77,24 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
-    "id": "5c051c35ee945aa3",
+    "id": "463318cf616c0d8c",
     "type": "split",
     "children": [
       {
-        "id": "37cce27cbcca159e",
+        "id": "f7c0c34d6c027fca",
         "type": "tabs",
         "children": [
           {
-            "id": "21c244c3bf320176",
+            "id": "b554212835d7cf2b",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "analise-de-fiis-na-pratica.md",
+                "file": "caracteristicas-produtos-milionarios.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,25 +104,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Links inversos para analise-de-fiis-na-pratica"
+              "title": "Links inversos para caracteristicas-produtos-milionarios"
             }
           },
           {
-            "id": "2dacc8e833189c40",
+            "id": "312c7105ac66d1cb",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "analise-de-fiis-na-pratica.md",
+                "file": "caracteristicas-produtos-milionarios.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Links de saída para analise-de-fiis-na-pratica"
+              "title": "Links de saída para caracteristicas-produtos-milionarios"
             }
           },
           {
-            "id": "6cf51cef447206fb",
+            "id": "5f0c66098f2089ff",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -134,15 +135,15 @@
             }
           },
           {
-            "id": "299f44008c6f9b42",
+            "id": "b282eb86e7c3bf9f",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "analise-de-fiis-na-pratica.md"
+                "file": "caracteristicas-produtos-milionarios.md"
               },
               "icon": "lucide-list",
-              "title": "Sumário de analise-de-fiis-na-pratica"
+              "title": "Sumário de caracteristicas-produtos-milionarios"
             }
           }
         ]
@@ -162,30 +163,10 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "a955cf4595cc2aff",
+  "active": "6d5c6657e7f6b5b9",
   "lastOpenFiles": [
-    "aula03/aula-03-aspectos-financeiros-e-tecnicos.md",
-    "analise-de-fiis-na-pratica.md",
-    "aula04/aula04-fiis-de-cris-e-fofs.md",
-    "aula02/aula02-localizacao.md",
-    "aula01/aula01-o-que-sao-fiis.md",
-    "aula04",
-    "aula02",
-    "aula01",
-    "Sem título.canvas",
-    "imagens/Pasted image 20240905181414.png",
-    "imagens/Pasted image 20240905180739.png",
-    "imagens/Pasted image 20240905174420.png",
-    "imagens/Pasted image 20240905173525.png",
-    "imagens/Pasted image 20240905171247.png",
-    "imagens/Pasted image 20240904204511.png",
-    "imagens/Pasted image 20240904204201.png",
-    "imagens/Pasted image 20240904181900.png",
-    "imagens/Pasted image 20240904181647.png",
-    "imagens/Pasted image 20240904181347.png",
-    "aula03/imagens",
-    "aula03",
-    "aula04-fiis-de-cris-e-fofs",
-    "imagens"
+    "Modulo1/caracteristicas-produtos-milionarios.md",
+    "Modulo1/quais-produtos-nao-vender.md",
+    "Modulo1"
   ]
 }
