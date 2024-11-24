@@ -1,29 +1,35 @@
-# Análise do FII AIE11 (Lajes corporativas)
 
-- Abrir o relatório gerencial do FII (pode ser facilmente encontrado buscando no Google, também é possível encontrá-los em sites de investimentos, como o Investidor10).
-- No relatório gerencial, deve ser identificado os ativos que esse FII possui (imóveis, outros fundos, CRIs, etc...)
-- Caso sejam imóveis, é importante entender melhor os aspectos desses imóveis, como: localização, vacância, quem são os locatários, etc. É interessante utilizar alguma ferramenta para auxiliar a encontrar essas informações, como o site Silla: https://app.siila.com.br/
-- Também em caso de fundos de tijolos, é importante verificar a vacância da região onde esses imóveis estão inseridos.
-- No relatório gerencial, há uma seção dedicada aos rendimentos do fundo, nessa seção é possível visualizar os dividendos distribuídos de cada mês dos últimos anos.
-- Na seção de Receitas, são exibidas as informações de receita de cada imóvel, como a ocupação, os inquilinos, a ABL e o tipo de contrato (típico ou atípico).
+# Análise de Fundos Imobiliários na prática
+
+Na análise de um FII, independente de sua categoria, é sempre importante analisar o relatório gerencial do fundo pois ele possui diversas informações relevantes a respeito daquele fundo. Ele pode ser facilmente encontrado buscando no Google ou em sites de investimentos, como o Investidor10.
+
+## Análise de fundos de Lajes corporativas (exemplo: FII AIE11)
+
+### Informações a serem buscadas no relatório gerencial:
+
+- Lista de imóveis que o fundo possui;
+- Aspectos dos imóveis, como: localização, vacância, quem são os locatários, etc. É interessante utilizar alguma ferramenta para auxiliar a encontrar essas informações, como o site Silla: https://app.siila.com.br/;
+- Vacância da região onde esses imóveis estão inseridos;
+- Rendimentos do fundo, nessa seção é possível visualizar os dividendos distribuídos de cada mês dos últimos anos;
+- Informações de receita de cada imóvel e outras informações, como a ocupação, os inquilinos, a ABL e o tipo de contrato (típico ou atípico).
 
 
-# Análise do FII XPML11 (Shoppings Center)
+## Análise do FII XPML11 (Shoppings Center)
 
-## Informações de um fundo de shopping center
+### Informações de um fundo de shopping center
 
-### Rendimentos do Shopping
+#### Rendimentos do Shopping
 
 - Aluguel das lojas
 - Estacionamento
 - Receita de Shopping
 - Receita de mídia (publicidade)
 
-#### Aluguel mínimo X Aluguel variável
+##### Aluguel mínimo X Aluguel variável
 
 O aluguel mínimo é um valor fixo por m², já o aluguel variável equivale a 7% das vendas de uma loja do shopping, se esse valor for superior ao do aluguel mínimo, o shopping recebe ele, se for inferior, o shopping recebe o valor do aluguel mínimo.
 
-#### Gastos dos lojistas do shopping
+##### Gastos dos lojistas do shopping
 
 - Aluguel
 - Condomínio
